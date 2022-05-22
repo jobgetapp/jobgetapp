@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jobgetapp/jobstack.git"
+    "url": "git+https://github.com/jobgetapp/jobgetapp.git"
   },
   "keywords": [
     "nodejs"
@@ -32,9 +32,9 @@
   "author": "sawyer@sawyerhopkins.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jobgetapp/jobstack/issues"
+    "url": "https://github.com/jobgetapp/jobgetapp/issues"
   },
-  "homepage": "https://github.com/jobgetapp/jobstack#readme",
+  "homepage": "https://github.com/jobgetapp/jobgetapp#readme",
   "dependencies": {
     "@microsoft/rush-lib":"~5.57.1",
     "semver": "7.3.5"

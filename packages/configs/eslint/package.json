@@ -2,9 +2,9 @@
   "name": "@jobgetapp/eslint-config",
   "version": "1.0.1",
   "description": "Standard eslint configuration",
-  "homepage": "https://github.com/jobgetapp/jobstack",
-  "repository": "https://github.com/jobgetapp/jobstack",
-  "license": "ISC",
+  "homepage": "https://github.com/jobgetapp/jobgetapp",
+  "repository": "https://github.com/jobgetapp/jobgetapp",
+  "license": "MIT",
   "scripts": {
     "build": "echo wow > /dev/null"
   },
