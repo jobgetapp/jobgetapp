@@ -1,0 +1,9 @@
+{
+  "extends": "@jobgetapp/typescript-config/tsconfig.lib.src.json",
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "../dist",
+    "rootDir": ".",
+    "baseUrl": "./" 
+  }
+}

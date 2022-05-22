@@ -1,0 +1,86 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "@fluffy-spoon/substitute",
+      "allowedCategories": [ "configs", "rush-libs" ]
+    },
+    {
+      "name": "@jest/reporters",
+      "allowedCategories": [ "configs" ]
+    },
+    {
+      "name": "@jest/types",
+      "allowedCategories": [ "configs", "rush-libs" ]
+    },
+    {
+      "name": "@jobgetapp/eslint-config",
+      "allowedCategories": [ "configs", "rush-libs" ]
+    },
+    {
+      "name": "@jobgetapp/jest-config",
+      "allowedCategories": [ "rush-libs" ]
+    },
+    {
+      "name": "@jobgetapp/typescript-config",
+      "allowedCategories": [ "configs", "rush-libs" ]
+    },
+    {
+      "name": "@microsoft/rush-lib",
+      "allowedCategories": [ "rush-libs" ]
+    },
+    {
+      "name": "@nuxtjs/eslint-config-typescript",
+      "allowedCategories": [ "configs" ]
+    },
+    {
+      "name": "@rushstack/eslint-config",
+      "allowedCategories": [ "configs" ]
+    },
+    {
+      "name": "eslint",
+      "allowedCategories": [ "configs", "rush-libs" ]
+    },
+    {
+      "name": "eslint-plugin-react",
+      "allowedCategories": [ "configs" ]
+    },
+    {
+      "name": "eslint-plugin-react-hooks",
+      "allowedCategories": [ "configs" ]
+    },
+    {
+      "name": "eslint-plugin-tsdoc",
+      "allowedCategories": [ "configs" ]
+    },
+    {
+      "name": "jest",
+      "allowedCategories": [ "configs", "rush-libs" ]
+    },
+    {
+      "name": "jest-extended",
+      "allowedCategories": [ "configs", "rush-libs" ]
+    },
+    {
+      "name": "semver",
+      "allowedCategories": [ "rush-libs" ]
+    },
+    {
+      "name": "ts-jest",
+      "allowedCategories": [ "configs", "rush-libs" ]
+    },
+    {
+      "name": "ts-node",
+      "allowedCategories": [ "configs", "rush-libs" ]
+    },
+    {
+      "name": "tsc-alias",
+      "allowedCategories": [ "configs", "rush-libs" ]
+    },
+    {
+      "name": "typescript",
+      "allowedCategories": [ "configs", "rush-libs" ]
+    }
+  ]
+}

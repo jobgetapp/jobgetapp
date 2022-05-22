@@ -1,0 +1,22 @@
+{
+  "name": "@jobgetapp/typescript-config",
+  "version": "1.0.0",
+  "description": "Standard typescript configuration",
+  "homepage": "https://github.com/jobgetapp/jobstack",
+  "repository": "https://github.com/jobgetapp/jobstack",
+  "license": "ISC",
+  "scripts": {
+    "build": "echo wow > /dev/null"
+  },
+  "contributors": [
+    "Sawyer Hopkins <sawyer@jobget.com>"
+  ],
+  "files": [
+    "*.json"
+  ],
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "typescript": "4.5.2"
+  }
+}
