@@ -1,0 +1,57 @@
+name: JobGet Release Pipeline
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'common/changes/**'
+  workflow_dispatch:
+
+concurrency: 
+  group: ${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish Changes
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/jobgetapp/ship:latest
+    steps:
+      # Checkout the latest changes for the branch
+      - name: Checkout
+        uses: actions/checkout@v3
+    
+      # Fix the git safe directory inside the container
+      - name: Fix git
+        run: |
+          git config --global --add safe.directory "*"
+          git config --local user.email github-actions@users.noreply.github.com
+          git config --local user.name GithubActions
+          git fetch origin dev
+
+      # Verify project change files have been created
+      - name: Check changes
+        run: rush change --verify
+
+      # Build project packages
+      - name: Build
+        run: |
+          set -e
+          RUSH_BUILD_ARGS=$(ship list -i | sed -n '/^\[/,$p' | jq -r '[.[] | .name = "--to \(.name)" | .name] | join(" ")')
+          rush build ${RUSH_BUILD_ARGS}
+
+      # Ensure changed packages adhere to lint rules
+      - name: Lint
+        run: |
+          set -e
+          RUSH_TEST_ARGS=$(ship list -i | sed -n '/^\[/,$p '| jq -r '[.[] | .name = "--only \(.name)" | .name] | join(" ")')
+          rush lint ${RUSH_TEST_ARGS}
+
+      # Ensure changed packages pass unit tests
+      - name: Test
+        run: |
+          set -e
+          RUSH_TEST_ARGS=$(ship list -i | sed -n '/^\[/,$p' | jq -r '[.[] | .name = "--only \(.name)" | .name] | join(" ")')
+          rush test ${RUSH_TEST_ARGS}
