@@ -1,0 +1,67 @@
+{
+  "name": "@jobgetapp/coverage-collector",
+  "version": "1.0.0",
+  "description": "A tool to collect code coverage across multiple projects in a mono-repo",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "contributors": [
+    "sawyer@sawyerhopkins.com"
+  ],
+  "files": [
+    "src",
+    "dist",
+    "bin.js"
+  ],
+  "bin": {
+    "@jobgetapp/coverage-collector": "bin.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p src/tsconfig.json && tsc-alias -p src/tsconfig.json",
+    "build:watch": "npm run build",
+    "lint": "eslint './src/**/*.ts' './test/**/*.ts'",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobgetapp/jobstack.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "sawyer@sawyerhopkins.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jobgetapp/jobstack/issues"
+  },
+  "homepage": "https://github.com/jobgetapp/jobstack#readme",
+  "dependencies": {
+    "@microsoft/rush-lib": "~5.57.1",
+    "@rushstack/node-core-library": "~3.44.2",
+    "istanbul-lib-coverage": "3.2.0",
+    "istanbul-lib-report": "3.0.0",
+    "istanbul-reports": "3.1.4",
+    "istanbul-reporter-html-monorepo": "1.1.3",
+    "glob": "~7.2.0"
+  },
+  "devDependencies": {
+    "@fluffy-spoon/substitute": "1.202.0",
+    "@jest/types":"26.6.2",
+    "@jobgetapp/eslint-config": "1.0.1",
+    "@jobgetapp/jest-config": "1.0.2",
+    "@jobgetapp/typescript-config": "1.0.0",
+    "@types/jest": "26.0.22",
+    "@types/node": "14.14.39",
+    "eslint": "7.32.0",
+    "jest": "26.6.3",
+    "jest-extended": "0.11.5",
+    "ts-jest": "26.5.4",
+    "ts-node": "10.7.0",
+    "tsc-alias": "1.3.10",
+    "typescript": "4.5.2",
+    "@types/istanbul-lib-coverage": "2.0.4",
+    "@types/istanbul-lib-report": "3.0.0",
+    "@types/istanbul-reports": "3.0.1",
+    "@types/glob": "~7.2.0"
+  }
+}

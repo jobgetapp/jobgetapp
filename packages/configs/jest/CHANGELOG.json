@@ -1,0 +1,29 @@
+{
+  "name": "@jobgetapp/jest-config",
+  "entries": [
+    {
+      "version": "1.0.2",
+      "tag": "@jobgetapp/jest-config_v1.0.2",
+      "date": "Wed, 27 Jul 2022 03:35:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "allow overriding the location of the tsconfig file"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.3",
+      "tag": "@jobgetapp/jest-config_v1.0.3",
+      "date": "Tue, 19 Oct 2021 02:54:01 GMT",
+      "comments": {}
+    },
+    {
+      "version": "1.0.1",
+      "tag": "@jobgetapp/jest-config_v1.0.1",
+      "date": "Tue, 19 Oct 2021 02:52:35 GMT",
+      "comments": {}
+    }
+  ]
+}

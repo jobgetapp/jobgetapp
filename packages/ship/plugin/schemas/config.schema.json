@@ -1,0 +1,22 @@
+{
+  "$id": "ship-config",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Ship Configuration",
+  "description": "For use with the ship command line utility plugins. Defines the global configuration for ship in the rush repo.",
+
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "description": "Part of the JSON Schema standard, this optional keyword declares the URL of the schema that the file conforms to. Editors may download the schema and use it to perform syntax highlighting.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the the rush repo.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "name"
+  ]
+}

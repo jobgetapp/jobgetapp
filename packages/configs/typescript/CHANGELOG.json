@@ -1,0 +1,23 @@
+{
+  "name": "@jobgetapp/typescript-config",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "tag": "@jobgetapp/typescript-config_v1.0.0",
+      "date": "Mon, 25 Jul 2022 00:04:33 GMT",
+      "comments": {}
+    },
+    {
+      "version": "1.0.3",
+      "tag": "@jobgetapp/typescript-config_v1.0.3",
+      "date": "Tue, 19 Oct 2021 02:54:01 GMT",
+      "comments": {}
+    },
+    {
+      "version": "1.0.1",
+      "tag": "@jobgetapp/typescript-config_v1.0.1",
+      "date": "Tue, 19 Oct 2021 02:52:35 GMT",
+      "comments": {}
+    }
+  ]
+}

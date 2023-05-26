@@ -201,8 +201,7 @@
     */
     "reviewCategories": [
       // Some example categories:
-      "rush-libs",
-      "configs"
+      "public"
     ],
     /**
      * A list of NPM package scopes that will be excluded from review.
@@ -364,22 +363,52 @@
   "projects": [{
     "packageName": "@jobgetapp/typescript-config",
     "projectFolder": "packages/configs/typescript",
-    "reviewCategory": "configs",
+    "reviewCategory": "public",
     "versionPolicyName": "packable"
   }, {
     "packageName": "@jobgetapp/eslint-config",
     "projectFolder": "packages/configs/eslint",
-    "reviewCategory": "configs",
+    "reviewCategory": "public",
     "versionPolicyName": "packable"
   }, {
     "packageName": "@jobgetapp/jest-config",
     "projectFolder": "packages/configs/jest",
-    "reviewCategory": "configs",
+    "reviewCategory": "public",
+    "versionPolicyName": "packable"
+  }, {
+    "packageName": "@jobgetapp/rushenv",
+    "projectFolder": "packages/libs/rushenv",
+    "reviewCategory": "public",
+    "versionPolicyName": "packable"
+  }, {
+    "packageName": "@jobgetapp/ship-cli",
+    "projectFolder": "packages/ship/cli",
+    "reviewCategory": "public",
+    "versionPolicyName": "packable"
+  }, {
+    "packageName": "@jobgetapp/ship-core",
+    "projectFolder": "packages/ship/core",
+    "reviewCategory": "public",
+    "versionPolicyName": "packable"
+  }, {
+    "packageName": "@jobgetapp/ship-plugin",
+    "projectFolder": "packages/ship/plugin",
+    "reviewCategory": "public",
+    "versionPolicyName": "packable"
+  }, {
+    "packageName": "@jobgetapp/check-review-categories",
+    "projectFolder": "packages/utilities/check-review-categories",
+    "reviewCategory": "public",
+    "versionPolicyName": "packable"
+  }, {
+    "packageName": "@jobgetapp/coverage-collector",
+    "projectFolder": "packages/utilities/coverage-collector",
+    "reviewCategory": "public",
     "versionPolicyName": "packable"
   }, {
     "packageName": "@jobgetapp/rush-normalize",
-    "projectFolder": "packages/rush-libs/normalize",
-    "reviewCategory": "rush-libs",
+    "projectFolder": "packages/utilities/normalize",
+    "reviewCategory": "public",
     "versionPolicyName": "packable"
   }]
 }

@@ -1,8 +1,10 @@
 # @jobgetapp/rush-normalize
 
+## Project Description
+
 This is a script that will use the rush version manager to find packages with mismatching versions, and update all consumers of these packages to the latest version supported by the rush repository. This is useful when a rush repository contains many interconnected projects being worked on by multiple developers. After a release, developers can run this script after pulling in their latest upstream changes.
 
-## Example
+## Usage
 
 ```
 > rush update

@@ -2,18 +2,8 @@
 require('@rushstack/eslint-config/patch/modern-module-resolution');
 
 module.exports = {
-  root: true,
+  // root: true,
   // extends: [ '@rushstack/eslint-config/profile/node' ],
-  parserOptions: {
-    ecmaFeatures: {
-        jsx: true
-    }
-  },
-  settings: {
-    react: {
-      version: "detect"
-    }
-  },
   parserOptions: {
     extraFileExtensions: ['.vue']
   },
@@ -23,24 +13,14 @@ module.exports = {
       rules: {}
     },
     {
-      files: ['*.tsx'],
-      extends: [
-        'plugin:react/recommended',
-        'plugin:react-hooks/recommended'
-      ]
-    },
-    {
       files: ['*.ts', '*.tsx', '*.vue'],
       extends: [
-        '@nuxtjs/eslint-config-typescript',
+        '@nuxtjs/eslint-config-typescript'
       ],
       plugins: [
         'eslint-plugin-tsdoc'
       ],
       rules: {
-        // https://github.com/typescript-eslint/typescript-eslint/issues/2502
-        'no-use-before-define': 'off',
-        '@typescript-eslint/no-use-before-define': 'error',
         "tsdoc/syntax": "error",
         /*
         "require-jsdoc": ["error", {

@@ -166,6 +166,26 @@
     //    */
     //   // "autoinstallerName": "my-task"
     // }
+    {
+      "name": "lint",
+      "commandKind": "bulk",
+      "summary": "Lint projects",
+      "description": "Executes each projects lint script.",
+      "ignoreMissingScript": true,
+      // use incremental build logic (important)
+      "incremental": true,
+      "enableParallelism": true
+    },
+    {
+      "name": "test",
+      "commandKind": "bulk",
+      "summary": "Tests projects",
+      "description": "Executes each projects test script.",
+      "ignoreMissingScript": true,
+      // use incremental build logic (important)
+      "incremental": true,
+      "enableParallelism": true
+    }
   ],
 
   /**

@@ -4,43 +4,71 @@
   "packages": [
     {
       "name": "@fluffy-spoon/substitute",
-      "allowedCategories": [ "configs", "rush-libs" ]
+      "allowedCategories": [ "configs", "public", "rush-libs" ]
     },
     {
       "name": "@jest/reporters",
-      "allowedCategories": [ "configs" ]
+      "allowedCategories": [ "configs", "public" ]
     },
     {
       "name": "@jest/types",
-      "allowedCategories": [ "configs", "rush-libs" ]
+      "allowedCategories": [ "configs", "public", "rush-libs" ]
     },
     {
       "name": "@jobgetapp/eslint-config",
-      "allowedCategories": [ "configs", "rush-libs" ]
+      "allowedCategories": [ "configs", "public", "rush-libs" ]
     },
     {
       "name": "@jobgetapp/jest-config",
-      "allowedCategories": [ "rush-libs" ]
+      "allowedCategories": [ "public", "rush-libs" ]
+    },
+    {
+      "name": "@jobgetapp/ship-core",
+      "allowedCategories": [ "public" ]
+    },
+    {
+      "name": "@jobgetapp/ship-plugin",
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "@jobgetapp/typescript-config",
-      "allowedCategories": [ "configs", "rush-libs" ]
+      "allowedCategories": [ "configs", "public", "rush-libs" ]
     },
     {
       "name": "@microsoft/rush-lib",
-      "allowedCategories": [ "rush-libs" ]
+      "allowedCategories": [ "public", "rush-libs" ]
     },
     {
       "name": "@nuxtjs/eslint-config-typescript",
-      "allowedCategories": [ "configs" ]
+      "allowedCategories": [ "configs", "public" ]
     },
     {
       "name": "@rushstack/eslint-config",
-      "allowedCategories": [ "configs" ]
+      "allowedCategories": [ "configs", "public" ]
+    },
+    {
+      "name": "@rushstack/node-core-library",
+      "allowedCategories": [ "public" ]
+    },
+    {
+      "name": "@rushstack/rush-sdk",
+      "allowedCategories": [ "public" ]
+    },
+    {
+      "name": "@rushstack/ts-command-line",
+      "allowedCategories": [ "public" ]
+    },
+    {
+      "name": "dotenv",
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "eslint",
-      "allowedCategories": [ "configs", "rush-libs" ]
+      "allowedCategories": [ "configs", "public", "rush-libs" ]
+    },
+    {
+      "name": "eslint-plugin-import",
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "eslint-plugin-react",
@@ -52,35 +80,59 @@
     },
     {
       "name": "eslint-plugin-tsdoc",
-      "allowedCategories": [ "configs" ]
+      "allowedCategories": [ "configs", "public" ]
+    },
+    {
+      "name": "git-repo-info",
+      "allowedCategories": [ "public" ]
+    },
+    {
+      "name": "glob",
+      "allowedCategories": [ "public" ]
+    },
+    {
+      "name": "istanbul-lib-coverage",
+      "allowedCategories": [ "public" ]
+    },
+    {
+      "name": "istanbul-lib-report",
+      "allowedCategories": [ "public" ]
+    },
+    {
+      "name": "istanbul-reporter-html-monorepo",
+      "allowedCategories": [ "public" ]
+    },
+    {
+      "name": "istanbul-reports",
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "jest",
-      "allowedCategories": [ "configs", "rush-libs" ]
+      "allowedCategories": [ "configs", "public", "rush-libs" ]
     },
     {
       "name": "jest-extended",
-      "allowedCategories": [ "configs", "rush-libs" ]
+      "allowedCategories": [ "configs", "public", "rush-libs" ]
     },
     {
       "name": "semver",
-      "allowedCategories": [ "rush-libs" ]
+      "allowedCategories": [ "public", "rush-libs" ]
     },
     {
       "name": "ts-jest",
-      "allowedCategories": [ "configs", "rush-libs" ]
+      "allowedCategories": [ "configs", "public", "rush-libs" ]
     },
     {
       "name": "ts-node",
-      "allowedCategories": [ "configs", "rush-libs" ]
+      "allowedCategories": [ "configs", "public", "rush-libs" ]
     },
     {
       "name": "tsc-alias",
-      "allowedCategories": [ "configs", "rush-libs" ]
+      "allowedCategories": [ "configs", "public", "rush-libs" ]
     },
     {
       "name": "typescript",
-      "allowedCategories": [ "configs", "rush-libs" ]
+      "allowedCategories": [ "configs", "public", "rush-libs" ]
     }
   ]
 }

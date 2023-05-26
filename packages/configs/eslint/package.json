@@ -2,9 +2,9 @@
   "name": "@jobgetapp/eslint-config",
   "version": "1.0.1",
   "description": "Standard eslint configuration",
-  "homepage": "https://github.com/jobgetapp/jobgetapp",
-  "repository": "https://github.com/jobgetapp/jobgetapp",
-  "license": "MIT",
+  "homepage": "https://github.com/jobgetapp/jobstack",
+  "repository": "https://github.com/jobgetapp/jobstack",
+  "license": "ISC",
   "scripts": {
     "build": "echo wow > /dev/null"
   },
@@ -16,12 +16,13 @@
   ],
   "dependencies": {
     "@rushstack/eslint-config": "2.4.3",
-    "@nuxtjs/eslint-config-typescript": "6.0.1",
-    "eslint-plugin-tsdoc": "0.2.14",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.3.0"
+    "@nuxtjs/eslint-config-typescript": "6.0.0",
+    "eslint-plugin-tsdoc": "0.2.14"
   },
   "peerDependencies": {
     "eslint": "7.32.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "2.25.2"
   }
 }

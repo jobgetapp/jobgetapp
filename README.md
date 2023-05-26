@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./.github_assets/jobget-rush.png" width="233px"/><br/>
+  JobGet Open Source
 </h1>
 
 <div align="center" style="padding-bottom: 2rem">

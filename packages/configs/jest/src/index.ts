@@ -4,9 +4,10 @@ import type { Config } from '@jest/types'
 
 export const JestConfig = (options: {
   forBrowser?: boolean
+  tsconfigPath?: string
 } = {}): Promise<Config.InitialOptions> => Promise.resolve({
   verbose: true,
-  collectCoverage: true,
+  collectCoverage: false,
   testEnvironment: options.forBrowser ? 'jsdom' : 'node',
   setupFilesAfterEnv: [
     'jest-extended'
@@ -35,7 +36,7 @@ export const JestConfig = (options: {
   },
   globals: {
     'ts-jest': {
-      tsconfig: '<rootDir>/test/tsconfig.json'
+      tsconfig: options.tsconfigPath || '<rootDir>/test/tsconfig.json'
     }
   }
 })

@@ -1,0 +1,167 @@
+{
+  "$id": "ship-project-config",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Ship Project Configuration",
+  "description": "For use with the ship command line utility plugins. Defines the deployment method for the project.",
+
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "description": "Part of the JSON Schema standard, this optional keyword declares the URL of the schema that the file conforms to. Editors may download the schema and use it to perform syntax highlighting.",
+      "type": "string"
+    },
+    "image": {
+      "description": "The base image for the project image (Docker FROM).",
+      "type": "string"
+    },
+    "buildType": {
+      "description": "Dockerfile that should be used to build project image.",
+      "type": "string"
+    },
+    "isCheckedOut": {
+      "description": "Branches this project can be shipped from.",
+      "type": ["boolean"]
+    },
+    "plugins": {
+      "description": "Plugins required to ship the project",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "plugin": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          },
+          "commands": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "anyOf": [{
+                  "type": "string"
+                }, {
+                  "type": "array",
+                  "items": {
+                    "anyOf": [{
+                      "type": "string"
+                    }]
+                  }
+                }]
+              }
+            }
+          },
+          "entrypoint": {
+            "type": "array",
+            "items": {
+              "anyOf": [{
+                "type": "string"
+              }]
+            }
+          },
+          "includedVariables": {
+            "type": "array",
+            "items": {
+              "anyOf": [{
+                "type": "string"
+              }]
+            }
+          },
+          "environment": {
+            "type": "array",
+            "items": {
+              "anyOf": [{
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string"
+                  }
+                },
+                "required": ["key", "value"]
+              }]
+            }
+          },
+          "volumes": {
+            "type": "array",
+            "items": {
+              "anyOf": [{
+                "type": "object",
+                "properties": {
+                  "hostPath": {
+                    "type": "string"
+                  },
+                  "containerPath": {
+                    "type": "string"
+                  },
+                  "ifExists": {
+                    "type": "boolean"
+                  }
+                },
+                "required": ["hostPath", "containerPath"]
+              }]
+            }
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "plugin",
+          "commands"
+        ]
+      }
+    },
+    "includedVariables": {
+      "type": "array",
+      "items": {
+        "anyOf": [{
+          "type": "string"
+        }]
+      }
+    },
+    "environment": {
+      "type": "array",
+      "items": {
+        "anyOf": [{
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": ["key", "value"]
+        }]
+      }
+    },
+    "volumes": {
+      "type": "array",
+      "items": {
+        "anyOf": [{
+          "type": "object",
+          "properties": {
+            "hostPath": {
+              "type": "string"
+            },
+            "containerPath": {
+              "type": "string"
+            },
+            "ifExists": {
+              "type": "boolean"
+            }
+          },
+          "required": ["hostPath", "containerPath"]
+        }]
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "image",
+    "plugins"
+  ]
+}

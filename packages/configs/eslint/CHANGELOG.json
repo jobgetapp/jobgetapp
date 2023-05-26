@@ -1,0 +1,17 @@
+{
+  "name": "@jobgetapp/eslint-config",
+  "entries": [
+    {
+      "version": "1.0.1",
+      "tag": "@jobgetapp/eslint-config_v1.0.1",
+      "date": "Fri, 11 Mar 2022 03:02:44 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update docs to conform to tsdoc"
+          }
+        ]
+      }
+    }
+  ]
+}
