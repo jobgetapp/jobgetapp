@@ -68,7 +68,7 @@ const collectCodeCoverage = async (): Promise<void> => {
 
   // Write the html-monorepo report
   const htmlReport: ReportBase = createReport('istanbul-reporter-html-monorepo' as any, {
-    reportTitle: 'Jobstack',
+    reportTitle: 'Rush',
     projects: config.projects.map(project => ({
       name: `[${project.reviewCategory}] ${project.packageName}`,
       path: project.projectRelativeFolder.replace('packages/', '')

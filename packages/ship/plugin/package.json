@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jobgetapp/jobstack.git"
+    "url": "git+https://github.com/jobgetapp/jobgetapp.git"
   },
   "keywords": [
     "nodejs"
@@ -28,9 +28,9 @@
   "author": "Sawyer Hopkins <sawyer@sawyerhopkins.com> (http://sawyerhopkins.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jobgetapp/jobstack/issues"
+    "url": "https://github.com/jobgetapp/jobgetapp/issues"
   },
-  "homepage": "https://github.com/jobgetapp/jobstack#readme",
+  "homepage": "https://github.com/jobgetapp/jobgetapp#readme",
   "dependencies": {
     "@rushstack/node-core-library": "~3.44.2",
     "@microsoft/rush-lib": "~5.57.1"

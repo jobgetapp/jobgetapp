@@ -4,23 +4,23 @@
   "packages": [
     {
       "name": "@fluffy-spoon/substitute",
-      "allowedCategories": [ "configs", "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "@jest/reporters",
-      "allowedCategories": [ "configs", "public" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "@jest/types",
-      "allowedCategories": [ "configs", "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "@jobgetapp/eslint-config",
-      "allowedCategories": [ "configs", "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "@jobgetapp/jest-config",
-      "allowedCategories": [ "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "@jobgetapp/ship-core",
@@ -32,19 +32,19 @@
     },
     {
       "name": "@jobgetapp/typescript-config",
-      "allowedCategories": [ "configs", "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "@microsoft/rush-lib",
-      "allowedCategories": [ "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "@nuxtjs/eslint-config-typescript",
-      "allowedCategories": [ "configs", "public" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "@rushstack/eslint-config",
-      "allowedCategories": [ "configs", "public" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "@rushstack/node-core-library",
@@ -64,23 +64,15 @@
     },
     {
       "name": "eslint",
-      "allowedCategories": [ "configs", "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "eslint-plugin-import",
       "allowedCategories": [ "public" ]
     },
     {
-      "name": "eslint-plugin-react",
-      "allowedCategories": [ "configs" ]
-    },
-    {
-      "name": "eslint-plugin-react-hooks",
-      "allowedCategories": [ "configs" ]
-    },
-    {
       "name": "eslint-plugin-tsdoc",
-      "allowedCategories": [ "configs", "public" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "git-repo-info",
@@ -108,31 +100,31 @@
     },
     {
       "name": "jest",
-      "allowedCategories": [ "configs", "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "jest-extended",
-      "allowedCategories": [ "configs", "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "semver",
-      "allowedCategories": [ "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "ts-jest",
-      "allowedCategories": [ "configs", "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "ts-node",
-      "allowedCategories": [ "configs", "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "tsc-alias",
-      "allowedCategories": [ "configs", "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     },
     {
       "name": "typescript",
-      "allowedCategories": [ "configs", "public", "rush-libs" ]
+      "allowedCategories": [ "public" ]
     }
   ]
 }
