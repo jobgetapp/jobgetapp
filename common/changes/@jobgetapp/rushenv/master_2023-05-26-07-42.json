@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@jobgetapp/rushenv",
+      "comment": "Add rushenv project",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@jobgetapp/rushenv"
+}

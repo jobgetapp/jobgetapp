@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@jobgetapp/jest-config",
+      "comment": "Sync with jobget internal settings",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@jobgetapp/jest-config"
+}

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@jobgetapp/ship-core",
+      "comment": "Add ship core project",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@jobgetapp/ship-core"
+}

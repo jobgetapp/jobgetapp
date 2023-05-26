@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@jobgetapp/coverage-collector",
+      "comment": "Add coverage collector project",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@jobgetapp/coverage-collector"
+}

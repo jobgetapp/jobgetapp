@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@jobgetapp/typescript-config",
+      "comment": "Sync with jobget internal settings",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@jobgetapp/typescript-config"
+}

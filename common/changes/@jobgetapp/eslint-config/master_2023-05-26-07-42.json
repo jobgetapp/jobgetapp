@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@jobgetapp/eslint-config",
+      "comment": "Sync with jobget internal settings",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@jobgetapp/eslint-config"
+}

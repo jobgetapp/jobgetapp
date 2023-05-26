@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@jobgetapp/check-review-categories",
+      "comment": "Add check review categories project",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@jobgetapp/check-review-categories"
+}
