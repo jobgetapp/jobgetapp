@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "chore update versions",
+      "type": "minor",
+      "packageName": "@jobgetapp/rushenv"
+    }
+  ],
+  "packageName": "@jobgetapp/rushenv",
+  "email": "sawyer@sawyerhopkins.com"
+}

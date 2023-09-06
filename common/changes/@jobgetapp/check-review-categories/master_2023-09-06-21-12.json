@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "chore update versions",
+      "type": "minor",
+      "packageName": "@jobgetapp/check-review-categories"
+    }
+  ],
+  "packageName": "@jobgetapp/check-review-categories",
+  "email": "sawyer@sawyerhopkins.com"
+}

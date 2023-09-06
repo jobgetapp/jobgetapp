@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "chore update versions",
+      "type": "minor",
+      "packageName": "@jobgetapp/rush-normalize"
+    }
+  ],
+  "packageName": "@jobgetapp/rush-normalize",
+  "email": "sawyer@sawyerhopkins.com"
+}

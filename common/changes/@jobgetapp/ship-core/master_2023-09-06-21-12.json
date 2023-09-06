@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "chore update versions",
+      "type": "minor",
+      "packageName": "@jobgetapp/ship-core"
+    }
+  ],
+  "packageName": "@jobgetapp/ship-core",
+  "email": "sawyer@sawyerhopkins.com"
+}
