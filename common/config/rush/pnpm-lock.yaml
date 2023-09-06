@@ -17,7 +17,7 @@ specifiers:
   '@rush-temp/typescript-config': file:./projects/typescript-config.tgz
   '@rushstack/eslint-config': 2.4.3
   '@rushstack/node-core-library': 3.44.2
-  '@rushstack/rush-sdk': 5.102.0
+  '@rushstack/rush-sdk': 5.100.2
   '@rushstack/ts-command-line': 4.10.5
   '@types/glob': 7.2.0
   '@types/istanbul-lib-coverage': 2.0.4
@@ -61,7 +61,7 @@ dependencies:
   '@rush-temp/typescript-config': file:projects/typescript-config.tgz
   '@rushstack/eslint-config': 2.4.3_eslint@7.32.0+typescript@4.5.2
   '@rushstack/node-core-library': 3.44.2
-  '@rushstack/rush-sdk': 5.102.0_@types+node@14.14.39
+  '@rushstack/rush-sdk': 5.100.2_@types+node@14.14.39
   '@rushstack/ts-command-line': 4.10.5
   '@types/glob': 7.2.0
   '@types/istanbul-lib-coverage': 2.0.4
@@ -1716,6 +1716,24 @@ packages:
       z-schema: 5.0.5
     dev: false
 
+  /@rushstack/node-core-library/3.59.6_@types+node@14.14.39:
+    resolution: {integrity: sha512-bMYJwNFfWXRNUuHnsE9wMlW/mOB4jIwSUkRKtu02CwZhQdmzMsUbxE0s1xOLwTpNIwlzfW/YT7OnOHgDffLgYg==}
+    peerDependencies:
+      '@types/node': '*'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+    dependencies:
+      '@types/node': 14.14.39
+      colors: 1.2.5
+      fs-extra: 7.0.1
+      import-lazy: 4.0.0
+      jju: 1.4.0
+      resolve: 1.22.4
+      semver: 7.5.4
+      z-schema: 5.0.5
+    dev: false
+
   /@rushstack/node-core-library/3.59.7_@types+node@14.14.39:
     resolution: {integrity: sha512-ln1Drq0h+Hwa1JVA65x5mlSgUrBa1uHL+V89FqVWQgXd1vVIMhrtqtWGQrhTnFHxru5ppX+FY39VWELF/FjQCw==}
     peerDependencies:
@@ -1835,6 +1853,16 @@ packages:
       - '@types/node'
       - encoding
       - supports-color
+    dev: false
+
+  /@rushstack/rush-sdk/5.100.2_@types+node@14.14.39:
+    resolution: {integrity: sha512-+4DKbXj6R8vilRYswH8Lb+WIuIoD29/ZjMmazKBKXJTm3x7sgGJy45ozAZbfeXvdOTzqsg11NzIbwaDm8rRhLQ==}
+    dependencies:
+      '@rushstack/node-core-library': 3.59.6_@types+node@14.14.39
+      '@types/node-fetch': 2.6.2
+      tapable: 2.2.1
+    transitivePeerDependencies:
+      - '@types/node'
     dev: false
 
   /@rushstack/rush-sdk/5.102.0_@types+node@14.14.39:
@@ -8916,14 +8944,14 @@ packages:
     dev: false
 
   file:projects/check-review-categories.tgz:
-    resolution: {integrity: sha512-Hl6FtlexbqnksArYWW5zbjhjUm90fCvPY6yGFxstx9BYNCn03/3BzgvsuJ4cAAjKF/YZcq84pPNQn33LDCUnkQ==, tarball: file:projects/check-review-categories.tgz}
+    resolution: {integrity: sha512-iCJ3/b79AeCnRp+iyTpXt65x/sDYNYiVvyeRSx92NE/MW3jGfoEAtc/g0++335OzUAFfr0esxYqK49nJ88jwAA==, tarball: file:projects/check-review-categories.tgz}
     name: '@rush-temp/check-review-categories'
     version: 0.0.0
     dependencies:
       '@fluffy-spoon/substitute': 1.202.0
       '@jest/types': 26.6.2
       '@rushstack/node-core-library': 3.44.2
-      '@rushstack/rush-sdk': 5.102.0_@types+node@14.14.39
+      '@rushstack/rush-sdk': 5.100.2_@types+node@14.14.39
       '@rushstack/ts-command-line': 4.10.5
       '@types/jest': 26.0.22
       '@types/node': 14.14.39
@@ -8944,7 +8972,7 @@ packages:
     dev: false
 
   file:projects/coverage-collector.tgz:
-    resolution: {integrity: sha512-xAwg4F+UxqvD1ByPQdufFpOtGFUZlR2ZDYNOgwyRMQxOF07Rnlon3i59GSRk9DRfUjqSvvDL1yKZfKvbomOlDQ==, tarball: file:projects/coverage-collector.tgz}
+    resolution: {integrity: sha512-OLSik/oIiKSb5UzWdTMdU7QTgECApRdJCXmAKxBw/T7dCj43XcJdYqJclAFz35XbXfeYqpwirOFc/gi/9aGHow==, tarball: file:projects/coverage-collector.tgz}
     name: '@rush-temp/coverage-collector'
     version: 0.0.0
     dependencies:
@@ -8952,7 +8980,7 @@ packages:
       '@jest/types': 26.6.2
       '@microsoft/rush-lib': 5.102.0_@types+node@14.14.39
       '@rushstack/node-core-library': 3.44.2
-      '@rushstack/rush-sdk': 5.102.0_@types+node@14.14.39
+      '@rushstack/rush-sdk': 5.100.2_@types+node@14.14.39
       '@types/glob': 7.2.0
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-lib-report': 3.0.0
@@ -9026,14 +9054,14 @@ packages:
     dev: false
 
   file:projects/rush-normalize.tgz:
-    resolution: {integrity: sha512-W7kXKzHbcclt53r7VbhKm3FbKBvCsmHYUqe1YoAxVofCgiGsZk2N6Nk205p0yGVE7T8RSA0V0xrHtw2A9KF0TA==, tarball: file:projects/rush-normalize.tgz}
+    resolution: {integrity: sha512-fijcPzy04zyUySIDrIsdSk9P2o/FptfFMz85vgsHa5UeBrGMHfCkhYBcGuxh9DPTtdCpf5lzBfkk9wiCM+5vIA==, tarball: file:projects/rush-normalize.tgz}
     name: '@rush-temp/rush-normalize'
     version: 0.0.0
     dependencies:
       '@fluffy-spoon/substitute': 1.202.0
       '@jest/types': 26.6.2
       '@microsoft/rush-lib': 5.102.0_@types+node@14.14.39
-      '@rushstack/rush-sdk': 5.102.0_@types+node@14.14.39
+      '@rushstack/rush-sdk': 5.100.2_@types+node@14.14.39
       '@types/jest': 26.0.22
       '@types/node': 14.14.39
       '@types/semver': 7.3.9
@@ -9055,7 +9083,7 @@ packages:
     dev: false
 
   file:projects/rushenv.tgz:
-    resolution: {integrity: sha512-K4sJNY9L4kLmn6SbTVJ4VqokZwbb/QrFC20ah4mdbimo2K8pZaRXpPxNy7vPqeK9vJ2KCaz/VjRb1a4hoV8GJw==, tarball: file:projects/rushenv.tgz}
+    resolution: {integrity: sha512-Ldk5RpnsjP2hqLTuEZPktq7Z9IosoDoeIVRWzYXIK0QVNZ2gL9kyWWyI1qUOaANFxzcnvn8yMOpfGsRPbX2tXA==, tarball: file:projects/rushenv.tgz}
     name: '@rush-temp/rushenv'
     version: 0.0.0
     dependencies:
@@ -9081,7 +9109,7 @@ packages:
     dev: false
 
   file:projects/ship-cli.tgz:
-    resolution: {integrity: sha512-AhlUO1zldirEs5dtFVn8+AEjAIkUeLFAW+iwgLrsYGk6hircR5SalSWW/yQBLmrbX+gPO2JP0OnOv8sPzaHFOg==, tarball: file:projects/ship-cli.tgz}
+    resolution: {integrity: sha512-B7z0wFPpGtPwtvfYT83+LKpMaeWuKmEjVXu0RL4A3tA36EQKhTH+sniYkOotTUGfcbGVJBmW+T/wad8a43EBJA==, tarball: file:projects/ship-cli.tgz}
     name: '@rush-temp/ship-cli'
     version: 0.0.0
     dependencies:
@@ -9109,7 +9137,7 @@ packages:
     dev: false
 
   file:projects/ship-core.tgz:
-    resolution: {integrity: sha512-qD05FBLBvbh8Ldq2QeYCnlRMSwXsvXoNLlCF4kgXcygdTpSGo8YhwR7hjLu94ys2ZN+gPjrjm1Py/0yRHGIGzA==, tarball: file:projects/ship-core.tgz}
+    resolution: {integrity: sha512-YB6HKfj/+9h6kp9kX9GRhOSLtlMBCTlNLI2KYqXZJCgT4lSRRU+vKWLCjUlGSfRwudZZjXHkSCCR9uqEzEA1HQ==, tarball: file:projects/ship-core.tgz}
     name: '@rush-temp/ship-core'
     version: 0.0.0
     dependencies:
@@ -9136,7 +9164,7 @@ packages:
     dev: false
 
   file:projects/ship-plugin.tgz:
-    resolution: {integrity: sha512-t7c33L5SFp2hUN+I/PuUEdBCNQgTxiNdlKkV9OmU3Z4riodLxkjPmlS9oimRxnqFbXHqUBtR+G/65VBS5ncQEQ==, tarball: file:projects/ship-plugin.tgz}
+    resolution: {integrity: sha512-9qqCKbDtaDNx9V/Ojwm5W0LDRYhz6wC9f55pL61mZC62neGy8s+qdTNzM+AU8hGY47gDQBYM3NmxW1cheLmkTQ==, tarball: file:projects/ship-plugin.tgz}
     name: '@rush-temp/ship-plugin'
     version: 0.0.0
     dependencies:
@@ -9144,7 +9172,7 @@ packages:
       '@jest/types': 26.6.2
       '@microsoft/rush-lib': 5.57.1
       '@rushstack/node-core-library': 3.44.2
-      '@rushstack/rush-sdk': 5.102.0_@types+node@14.14.39
+      '@rushstack/rush-sdk': 5.100.2_@types+node@14.14.39
       '@types/jest': 26.0.22
       '@types/node': 14.14.39
       eslint: 7.32.0
