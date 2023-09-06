@@ -1,6 +1,6 @@
 {
   "name": "@jobgetapp/coverage-collector",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A tool to collect code coverage across multiple projects in a mono-repo",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

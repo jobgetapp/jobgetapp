@@ -2,6 +2,18 @@
   "name": "@jobgetapp/rush-normalize",
   "entries": [
     {
+      "version": "1.2.0",
+      "tag": "@jobgetapp/rush-normalize_v1.2.0",
+      "date": "Wed, 06 Sep 2023 20:54:30 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "rollback rush sdk to version 5.100.2"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.1.0",
       "tag": "@jobgetapp/rush-normalize_v1.1.0",
       "date": "Wed, 06 Sep 2023 18:43:19 GMT",
