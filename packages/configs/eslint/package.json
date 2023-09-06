@@ -1,6 +1,6 @@
 {
   "name": "@jobgetapp/eslint-config",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Standard eslint configuration",
   "homepage": "https://github.com/jobgetapp/jobgetapp",
   "repository": "https://github.com/jobgetapp/jobgetapp",

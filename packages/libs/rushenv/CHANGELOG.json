@@ -2,6 +2,29 @@
   "name": "@jobgetapp/rushenv",
   "entries": [
     {
+      "version": "1.1.0",
+      "tag": "@jobgetapp/rushenv_v1.1.0",
+      "date": "Wed, 06 Sep 2023 21:15:37 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "chore update versions"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@jobgetapp/eslint-config\" from `1.0.1` to `1.1.0`"
+          },
+          {
+            "comment": "Updating dependency \"@jobgetapp/jest-config\" from `1.1.0` to `1.2.0`"
+          },
+          {
+            "comment": "Updating dependency \"@jobgetapp/typescript-config\" from `1.0.0` to `1.1.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.1",
       "tag": "@jobgetapp/rushenv_v1.0.1",
       "date": "Wed, 06 Sep 2023 18:43:19 GMT",

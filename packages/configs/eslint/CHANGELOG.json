@@ -2,6 +2,18 @@
   "name": "@jobgetapp/eslint-config",
   "entries": [
     {
+      "version": "1.1.0",
+      "tag": "@jobgetapp/eslint-config_v1.1.0",
+      "date": "Wed, 06 Sep 2023 21:15:37 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "chore update versions"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.1",
       "tag": "@jobgetapp/eslint-config_v1.0.1",
       "date": "Fri, 11 Mar 2022 03:02:44 GMT",
