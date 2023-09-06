@@ -1,6 +1,6 @@
 {
   "name": "@jobgetapp/check-review-categories",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Utility to ensure rush projects to not leak internal code.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -45,7 +45,7 @@
     "@fluffy-spoon/substitute": "1.202.0",
     "@jest/types":"26.6.2",
     "@jobgetapp/eslint-config": "1.0.1",
-    "@jobgetapp/jest-config": "1.0.2",
+    "@jobgetapp/jest-config": "1.1.0",
     "@jobgetapp/typescript-config": "1.0.0",
     "@types/jest": "26.0.22",
     "@types/node": "14.14.39",

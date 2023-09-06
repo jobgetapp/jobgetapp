@@ -2,6 +2,18 @@
   "name": "@jobgetapp/jest-config",
   "entries": [
     {
+      "version": "1.1.0",
+      "tag": "@jobgetapp/jest-config_v1.1.0",
+      "date": "Wed, 06 Sep 2023 18:43:19 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "replace rush-lib with rush-sdk"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.2",
       "tag": "@jobgetapp/jest-config_v1.0.2",
       "date": "Wed, 27 Jul 2022 03:35:05 GMT",

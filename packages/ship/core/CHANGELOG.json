@@ -1,0 +1,25 @@
+{
+  "name": "@jobgetapp/ship-core",
+  "entries": [
+    {
+      "version": "1.1.0",
+      "tag": "@jobgetapp/ship-core_v1.1.0",
+      "date": "Wed, 06 Sep 2023 18:43:19 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "replace rush-lib with rush-sdk"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@jobgetapp/ship-plugin\" from `1.0.0` to `1.1.0`"
+          },
+          {
+            "comment": "Updating dependency \"@jobgetapp/jest-config\" from `1.0.2` to `1.1.0`"
+          }
+        ]
+      }
+    }
+  ]
+}

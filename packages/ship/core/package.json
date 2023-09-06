@@ -1,6 +1,6 @@
 {
   "name": "@jobgetapp/ship-core",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Plugin based deployment task runner.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -31,14 +31,14 @@
   },
   "homepage": "https://github.com/jobgetapp/jobgetapp#readme",
   "dependencies": {
-    "@jobgetapp/ship-plugin": "1.0.0",
+    "@jobgetapp/ship-plugin": "1.1.0",
     "@rushstack/node-core-library": "3.44.2"
   },
   "devDependencies": {
     "@fluffy-spoon/substitute": "1.202.0",
     "@jest/types":"26.6.2",
     "@jobgetapp/eslint-config": "1.0.1",
-    "@jobgetapp/jest-config": "1.0.2",
+    "@jobgetapp/jest-config": "1.1.0",
     "@jobgetapp/typescript-config": "1.0.0",
     "@types/jest": "26.0.22",
     "@types/node": "14.14.39",
