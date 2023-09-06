@@ -10,7 +10,7 @@ export const JestConfig = (options: {
   collectCoverage: false,
   testEnvironment: options.forBrowser ? 'jsdom' : 'node',
   setupFilesAfterEnv: [
-    'jest-extended'
+    'jest-extended/all'
   ],
   reporters: [
     path.resolve(__dirname, 'fixed-reporter')
@@ -29,14 +29,11 @@ export const JestConfig = (options: {
     '<rootDir>/test/**/*.test.ts'
   ],
   transform: {
-    '^.+\\.tsx?$': 'ts-jest'
+    '^.+\\.tsx?$': ['ts-jest', {
+      tsconfig: options.tsconfigPath || '<rootDir>/test/tsconfig.json'
+    }]
   },
   moduleNameMapper: {
     '~/(.*)': '<rootDir>/src/$1'
-  },
-  globals: {
-    'ts-jest': {
-      tsconfig: options.tsconfigPath || '<rootDir>/test/tsconfig.json'
-    }
   }
 })
