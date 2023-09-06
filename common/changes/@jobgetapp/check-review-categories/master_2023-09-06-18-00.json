@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "replace rush-lib with rush-sdk",
+      "type": "minor",
+      "packageName": "@jobgetapp/check-review-categories"
+    }
+  ],
+  "packageName": "@jobgetapp/check-review-categories",
+  "email": "sawyer@sawyerhopkins.com"
+}

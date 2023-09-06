@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "replace rush-lib with rush-sdk",
+      "type": "minor",
+      "packageName": "@jobgetapp/ship-core"
+    }
+  ],
+  "packageName": "@jobgetapp/ship-core",
+  "email": "sawyer@sawyerhopkins.com"
+}
