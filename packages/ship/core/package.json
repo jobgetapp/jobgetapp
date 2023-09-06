@@ -1,6 +1,6 @@
 {
   "name": "@jobgetapp/ship-core",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Plugin based deployment task runner.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/jobgetapp/jobgetapp#readme",
   "dependencies": {
-    "@jobgetapp/ship-plugin": "1.1.0",
+    "@jobgetapp/ship-plugin": "1.2.0",
     "@rushstack/node-core-library": "3.44.2"
   },
   "devDependencies": {

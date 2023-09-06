@@ -1,6 +1,6 @@
 {
   "name": "@jobgetapp/check-review-categories",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Utility to ensure rush projects to not leak internal code.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

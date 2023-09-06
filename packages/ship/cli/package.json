@@ -1,6 +1,6 @@
 {
   "name": "@jobgetapp/ship-cli",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Library used to ship build resources to the cloud.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -36,10 +36,10 @@
   },
   "homepage": "https://github.com/jobgetapp/jobgetapp#readme",
   "dependencies": {
-    "@jobgetapp/ship-plugin": "1.1.0",
+    "@jobgetapp/ship-plugin": "1.2.0",
     "@rushstack/ts-command-line": "4.10.5",
     "@rushstack/node-core-library": "3.44.2",
-    "@jobgetapp/ship-core": "1.1.0",
+    "@jobgetapp/ship-core": "1.1.1",
     "git-repo-info": "2.1.1"
   },
   "devDependencies": {
