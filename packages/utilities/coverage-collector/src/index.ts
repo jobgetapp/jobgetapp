@@ -41,7 +41,7 @@ const collectCodeCoverage = async (): Promise<void> => {
   // Get information about rush projects
   const config: RushConfiguration = RushConfiguration.loadFromDefaultLocation()
   const projectFolders: string[] = config.projects.map(project => project.projectFolder)
-  const destinationFolder: string = `${config.rushJsonFolder}/common/temp/coverage`
+  const destinationFolder = `${config.rushJsonFolder}/common/temp/coverage`
 
   // Merge the "coverage-final.json" from each project into one big coverage map
   const coverageMap: CoverageMap = createCoverageMap({})

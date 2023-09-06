@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/jobgetapp/jobgetapp#readme",
   "dependencies": {
-    "@jest/reporters": "~27.4.5",
+    "@jest/reporters": "27.4.5",
     "@jest/types": "29.6.3"
   },
   "peerDependencies": {
