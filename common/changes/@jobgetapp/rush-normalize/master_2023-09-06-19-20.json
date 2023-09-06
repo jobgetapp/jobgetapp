@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "rollback rush sdk to version 5.100.2",
+      "type": "minor",
+      "packageName": "@jobgetapp/rush-normalize"
+    }
+  ],
+  "packageName": "@jobgetapp/rush-normalize",
+  "email": "sawyer@sawyerhopkins.com"
+}

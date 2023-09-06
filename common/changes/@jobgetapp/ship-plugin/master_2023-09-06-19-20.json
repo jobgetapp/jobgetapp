@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "rollback rush sdk to version 5.100.2",
+      "type": "minor",
+      "packageName": "@jobgetapp/ship-plugin"
+    }
+  ],
+  "packageName": "@jobgetapp/ship-plugin",
+  "email": "sawyer@sawyerhopkins.com"
+}

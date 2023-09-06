@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "rollback rush sdk to version 5.100.2",
+      "type": "minor",
+      "packageName": "@jobgetapp/coverage-collector"
+    }
+  ],
+  "packageName": "@jobgetapp/coverage-collector",
+  "email": "sawyer@sawyerhopkins.com"
+}
