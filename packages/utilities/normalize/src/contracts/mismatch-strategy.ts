@@ -1,7 +1,7 @@
-import { VersionMismatchFinder } from '@microsoft/rush-lib/lib/logic/versionMismatch/VersionMismatchFinder'
+import { VersionMismatchFinder } from '@rushstack/rush-sdk/lib/logic/versionMismatch/VersionMismatchFinder'
 
-export { RushConfiguration } from '@microsoft/rush-lib/lib/api/RushConfiguration'
-export { VersionMismatchFinder } from '@microsoft/rush-lib/lib/logic/versionMismatch/VersionMismatchFinder'
+export { RushConfiguration } from '@rushstack/rush-sdk/lib/api/RushConfiguration'
+export { VersionMismatchFinder } from '@rushstack/rush-sdk/lib/logic/versionMismatch/VersionMismatchFinder'
 
 /**
  * Service for executing a strategy to

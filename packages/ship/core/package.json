@@ -32,8 +32,7 @@
   "homepage": "https://github.com/jobgetapp/jobgetapp#readme",
   "dependencies": {
     "@jobgetapp/ship-plugin": "1.0.0",
-    "@microsoft/rush-lib": "~5.57.1",
-    "@rushstack/node-core-library": "~3.44.2"
+    "@rushstack/node-core-library": "3.44.2"
   },
   "devDependencies": {
     "@fluffy-spoon/substitute": "1.202.0",

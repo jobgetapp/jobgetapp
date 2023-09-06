@@ -37,9 +37,9 @@
   },
   "homepage": "https://github.com/jobgetapp/jobgetapp#readme",
   "dependencies": {
-    "@rushstack/ts-command-line": "~4.10.5",
-    "@rushstack/node-core-library": "~3.44.2",
-    "@rushstack/rush-sdk": "~5.89.1"
+    "@rushstack/ts-command-line": "4.10.5",
+    "@rushstack/node-core-library": "3.44.2",
+    "@rushstack/rush-sdk": "5.102.0"
   },
   "devDependencies": {
     "@fluffy-spoon/substitute": "1.202.0",

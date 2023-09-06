@@ -5,8 +5,8 @@
 import * as fs from 'fs'
 
 // Istanbul-related imports
-import { RushConfiguration } from '@microsoft/rush-lib'
 import { JsonFile } from '@rushstack/node-core-library'
+import { RushConfiguration } from '@rushstack/rush-sdk'
 import glob from 'glob'
 import { CoverageMap, CoverageMapData, createCoverageMap, createFileCoverage } from 'istanbul-lib-coverage'
 import { Context, ReportBase, createContext } from 'istanbul-lib-report'

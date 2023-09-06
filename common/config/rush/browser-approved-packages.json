@@ -35,10 +35,6 @@
       "allowedCategories": [ "public" ]
     },
     {
-      "name": "@microsoft/rush-lib",
-      "allowedCategories": [ "public" ]
-    },
-    {
       "name": "@nuxtjs/eslint-config-typescript",
       "allowedCategories": [ "public" ]
     },

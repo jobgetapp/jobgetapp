@@ -31,10 +31,7 @@ export class ChangeService implements ChangeServiceContract {
     protected readonly changeManager: Contracts.ChangeManager,
     protected readonly configService: Contracts.ShipConfigServiceContract,
     protected readonly config: Contracts.ShipGlobalConfig
-  ) {
-    // Preload rush change state
-    changeManager.load(rushConfiguration.changesFolder)
-  }
+  ) {}
 
   /**
    * Get all changed projects in the rush repo meeting the provided conditions
@@ -43,6 +40,8 @@ export class ChangeService implements ChangeServiceContract {
   public async getChangedProjects (
     options: GetChangedProjectsOptions = {}
   ): Promise<ChangedProject[]> {
+    await this.changeManager.loadAsync(this.rushConfiguration.changesFolder)
+
     /**
      * Helper function to resolve changed projects with a defined project
      * @param changedProject -
@@ -83,7 +82,7 @@ export class ChangeService implements ChangeServiceContract {
       filterProjectPath(changedProject)
 
     // Get changed projects
-    const projectsJsonPromises = this.changeManager.changes
+    const projectsJsonPromises = this.changeManager.packageChanges
       // Map to internal format
       .map(change => ({
         ...change,

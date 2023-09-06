@@ -1,4 +1,4 @@
-export { IChangeInfo } from '@microsoft/rush-lib/lib/api/ChangeManagement'
-export { ChangeManager } from '@microsoft/rush-lib/lib/logic/ChangeManager'
-export { RushConfiguration } from '@microsoft/rush-lib/lib/api/RushConfiguration'
-export { RushConfigurationProject } from '@microsoft/rush-lib/lib/api/RushConfigurationProject'
+export { IChangeInfo } from '@rushstack/rush-sdk/lib/api/ChangeManagement'
+export { ChangeManager } from '@rushstack/rush-sdk/lib/logic/ChangeManager'
+export { RushConfiguration } from '@rushstack/rush-sdk/lib/api/RushConfiguration'
+export { RushConfigurationProject } from '@rushstack/rush-sdk/lib/api/RushConfigurationProject'

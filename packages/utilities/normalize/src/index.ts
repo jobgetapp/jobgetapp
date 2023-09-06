@@ -1,5 +1,5 @@
-import { RushConfiguration } from '@microsoft/rush-lib/lib/api/RushConfiguration'
-import { VersionMismatchFinder } from '@microsoft/rush-lib/lib/logic/versionMismatch/VersionMismatchFinder'
+import { RushConfiguration } from '@rushstack/rush-sdk/lib/api/RushConfiguration'
+import { VersionMismatchFinder } from '@rushstack/rush-sdk/lib/logic/versionMismatch/VersionMismatchFinder'
 import * as SemVer from 'semver'
 
 import {

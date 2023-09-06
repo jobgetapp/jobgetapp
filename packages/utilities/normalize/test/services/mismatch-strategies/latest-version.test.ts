@@ -1,6 +1,8 @@
 import { Substitute } from '@fluffy-spoon/substitute'
-import { PackageJsonDependency } from '@microsoft/rush-lib/lib/api/PackageJsonEditor'
-import { VersionMismatchFinderEntity } from '@microsoft/rush-lib/lib/logic/versionMismatch/VersionMismatchFinderEntity'
+import { PackageJsonDependency } from '@rushstack/rush-sdk/lib/api/PackageJsonEditor'
+import {
+  VersionMismatchFinderEntity
+} from '@rushstack/rush-sdk/lib/logic/versionMismatch/VersionMismatchFinderEntity'
 import * as SemVer from 'semver'
 
 import { VersionMismatchFinder } from '~/contracts'
