@@ -42,6 +42,8 @@ module.exports = {
         // Typescript breaks this rule sometimes, but has no fix rule :/
         'arrow-parens': 'off',
         // ESLint -> Typescript
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": "error",    
         'no-useless-constructor': 'off',
         '@typescript-eslint/no-useless-constructor': 'error',
         'no-redeclare': 'off',
