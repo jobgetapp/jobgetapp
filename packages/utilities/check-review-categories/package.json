@@ -39,7 +39,7 @@
   "dependencies": {
     "@rushstack/ts-command-line": "4.10.5",
     "@rushstack/node-core-library": "3.44.2",
-    "@rushstack/rush-sdk": "5.102.0"
+    "@rushstack/rush-sdk": "5.100.2"
   },
   "devDependencies": {
     "@fluffy-spoon/substitute": "1.202.0",

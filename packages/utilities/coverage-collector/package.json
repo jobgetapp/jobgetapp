@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/jobgetapp/jobgetapp#readme",
   "dependencies": {
-    "@rushstack/rush-sdk": "5.102.0",
+    "@rushstack/rush-sdk": "5.100.2",
     "@rushstack/node-core-library": "3.44.2",
     "istanbul-lib-coverage": "3.2.0",
     "istanbul-lib-report": "3.0.0",
