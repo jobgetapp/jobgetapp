@@ -61,3 +61,23 @@ jobs:
           set -e
           RUSH_TEST_ARGS=$(ship list -i | sed -n '/^\[/,$p' | jq -r '[.[] | .name = "--only \(.name)" | .name] | join(" ")')
           rush test ${RUSH_TEST_ARGS}
+
+      # Publish to GPR
+      - name: GPR Publish
+        env:
+          JOBGETAPP_REGISTRY: npm.pkg.github.com
+          GPR_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          rush publish --apply --publish
+          git clean -f
+          git reset --hard HEAD
+
+      # Publish to NPM
+      - name: NPM Publish
+        env:
+          JOBGETAPP_REGISTRY: registry.npmjs.org
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        run: |
+          set -e
+          rush publish --apply --publish --target-branch master
