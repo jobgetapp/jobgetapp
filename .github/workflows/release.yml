@@ -35,6 +35,12 @@ jobs:
       - name: Check changes
         run: rush change --verify
 
+      # Install packages
+      - name: Install
+        run: |
+          set -e
+          rush install
+
       # Build project packages
       - name: Build
         run: |
