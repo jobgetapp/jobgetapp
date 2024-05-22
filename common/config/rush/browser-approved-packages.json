@@ -55,6 +55,14 @@
       "allowedCategories": [ "public" ]
     },
     {
+      "name": "@swc/core",
+      "allowedCategories": [ "public" ]
+    },
+    {
+      "name": "@swc/jest",
+      "allowedCategories": [ "public" ]
+    },
+    {
       "name": "dotenv",
       "allowedCategories": [ "public" ]
     },

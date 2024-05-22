@@ -29,9 +29,7 @@ export const JestConfig = (options: {
     '<rootDir>/test/**/*.test.ts'
   ],
   transform: {
-    '^.+\\.tsx?$': ['ts-jest', {
-      tsconfig: options.tsconfigPath || '<rootDir>/test/tsconfig.json'
-    }]
+    '^.+\\.tsx?$': ['@swc/jest', {}]
   },
   moduleNameMapper: {
     '~/(.*)': '<rootDir>/src/$1'
