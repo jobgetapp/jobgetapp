@@ -1,6 +1,13 @@
 # Change Log - @jobgetapp/jest-config
 
-This log was last generated on Wed, 06 Sep 2023 21:15:37 GMT and should not be manually modified.
+This log was last generated on Wed, 22 May 2024 05:09:13 GMT and should not be manually modified.
+
+## 2.0.0
+Wed, 22 May 2024 05:09:13 GMT
+
+### Patches
+
+- Enable Jest SWC
 
 ## 1.2.0
 Wed, 06 Sep 2023 21:15:37 GMT
