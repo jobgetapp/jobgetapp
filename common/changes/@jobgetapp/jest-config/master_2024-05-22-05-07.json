@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@jobgetapp/jest-config",
+      "comment": "Enable Jest SWC",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@jobgetapp/jest-config"
+}
