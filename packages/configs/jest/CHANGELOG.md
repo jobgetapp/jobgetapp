@@ -1,6 +1,13 @@
 # Change Log - @jobgetapp/jest-config
 
-This log was last generated on Mon, 10 Jun 2024 21:29:03 GMT and should not be manually modified.
+This log was last generated on Mon, 10 Jun 2024 22:05:24 GMT and should not be manually modified.
+
+## 3.0.1
+Mon, 10 Jun 2024 22:05:24 GMT
+
+### Patches
+
+- remove swc deps
 
 ## 3.0.0
 Mon, 10 Jun 2024 21:29:03 GMT
