@@ -1,6 +1,6 @@
 {
   "name": "@jobgetapp/jest-config",
-  "version": "2.0.0-beta",
+  "version": "3.0.0",
   "description": "Standard jest configuration",
   "main": "dist/index.js",
   "contributors": [
