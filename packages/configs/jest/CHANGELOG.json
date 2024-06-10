@@ -2,6 +2,18 @@
   "name": "@jobgetapp/jest-config",
   "entries": [
     {
+      "version": "3.0.0",
+      "tag": "@jobgetapp/jest-config_v3.0.0",
+      "date": "Mon, 10 Jun 2024 21:29:03 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "enable more logging and revert to using ts-jest"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.0.0",
       "tag": "@jobgetapp/jest-config_v2.0.0",
       "date": "Wed, 22 May 2024 05:09:13 GMT",

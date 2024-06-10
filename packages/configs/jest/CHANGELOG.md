@@ -1,6 +1,13 @@
 # Change Log - @jobgetapp/jest-config
 
-This log was last generated on Wed, 22 May 2024 05:09:13 GMT and should not be manually modified.
+This log was last generated on Mon, 10 Jun 2024 21:29:03 GMT and should not be manually modified.
+
+## 3.0.0
+Mon, 10 Jun 2024 21:29:03 GMT
+
+### Breaking changes
+
+- enable more logging and revert to using ts-jest
 
 ## 2.0.0
 Wed, 22 May 2024 05:09:13 GMT
