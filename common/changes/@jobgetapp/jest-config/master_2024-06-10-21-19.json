@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@jobgetapp/jest-config",
+      "comment": "enable more logging and revert to using ts-jest",
+      "type": "major"
+    }
+  ],
+  "packageName": "@jobgetapp/jest-config"
+}
