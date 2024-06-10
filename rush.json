@@ -117,7 +117,7 @@
    *
    * LTS for Node are even numbered releases. Allow past 2 LTS versions only.
    */
-  "nodeSupportedVersionRange": ">=14.15.0 <15.0.0 || >=16.13.0 < 17.0.0",
+  "nodeSupportedVersionRange": ">=20.0.0 <21.0.0",
   /**
    * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
    * spend six months in a stabilization period before the first Long Term Support (LTS) version.
