@@ -410,5 +410,10 @@
     "projectFolder": "packages/utilities/normalize",
     "reviewCategory": "public",
     "versionPolicyName": "packable"
+  }, {
+    "packageName": "@jobgetapp/rush-enforce-categories-plugin",
+    "projectFolder": "packages/rush-plugins/enforce-categories",
+    "reviewCategory": "public",
+    "versionPolicyName": "packable"
   }]
 }

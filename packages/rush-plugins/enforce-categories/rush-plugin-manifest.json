@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush-plugin-manifest.schema.json",
+  "plugins": [
+    {
+      "pluginName": "rush-enforce-categories-plugin",
+      "description": "Utility to ensure rush projects to not leak internal code.",
+      "commandLineJsonFilePath": "./command-line.json"
+    }
+  ]
+}

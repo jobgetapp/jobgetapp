@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/command-line.schema.json",
+  "commands": [
+    {
+      "name": "enforce-categories",
+      "commandKind": "global",
+      "summary": "Utility to ensure rush projects to not leak internal code.",
+      "shellCommand": "node <packageFolder>/dist/index.js",
+      "safeForSimultaneousRushProcesses": false
+    }
+  ]
+}

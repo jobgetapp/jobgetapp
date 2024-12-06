@@ -4,13 +4,13 @@ specifiers:
   '@fluffy-spoon/substitute': 1.208.0
   '@jest/reporters': 27.4.5
   '@jest/types': 29.6.3
-  '@jobgetapp/eslint-config': 1.1.0
   '@jobgetapp/jest-config': 1.2.0
   '@nuxtjs/eslint-config-typescript': 12.0.0
   '@rush-temp/check-review-categories': file:./projects/check-review-categories.tgz
   '@rush-temp/coverage-collector': file:./projects/coverage-collector.tgz
   '@rush-temp/eslint-config': file:./projects/eslint-config.tgz
   '@rush-temp/jest-config': file:./projects/jest-config.tgz
+  '@rush-temp/rush-enforce-categories-plugin': file:./projects/rush-enforce-categories-plugin.tgz
   '@rush-temp/rush-normalize': file:./projects/rush-normalize.tgz
   '@rush-temp/rushenv': file:./projects/rushenv.tgz
   '@rush-temp/ship-cli': file:./projects/ship-cli.tgz
@@ -50,13 +50,13 @@ dependencies:
   '@fluffy-spoon/substitute': 1.208.0
   '@jest/reporters': 27.4.5
   '@jest/types': 29.6.3
-  '@jobgetapp/eslint-config': 1.1.0_eslint@8.48.0+typescript@5.1.6
   '@jobgetapp/jest-config': 1.2.0_21ce63089f85f2328a354cf050dfab51
   '@nuxtjs/eslint-config-typescript': 12.0.0_eslint@8.48.0+typescript@5.1.6
   '@rush-temp/check-review-categories': file:projects/check-review-categories.tgz
   '@rush-temp/coverage-collector': file:projects/coverage-collector.tgz
   '@rush-temp/eslint-config': file:projects/eslint-config.tgz_typescript@5.1.6
   '@rush-temp/jest-config': file:projects/jest-config.tgz
+  '@rush-temp/rush-enforce-categories-plugin': file:projects/rush-enforce-categories-plugin.tgz
   '@rush-temp/rush-normalize': file:projects/rush-normalize.tgz
   '@rush-temp/rushenv': file:projects/rushenv.tgz
   '@rush-temp/ship-cli': file:projects/ship-cli.tgz
@@ -4891,38 +4891,6 @@ packages:
       yargs-parser: 21.1.1
     dev: false
 
-  /ts-node/10.9.1_30508b081cb57ee108d0bf62d6b51711:
-    resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
-    hasBin: true
-    peerDependencies:
-      '@swc/core': '>=1.2.50'
-      '@swc/wasm': '>=1.2.50'
-      '@types/node': '*'
-      typescript: '>=2.7'
-    peerDependenciesMeta:
-      '@swc/core':
-        optional: true
-      '@swc/wasm':
-        optional: true
-    dependencies:
-      '@cspotcode/source-map-support': 0.8.1
-      '@swc/core': 1.5.7
-      '@tsconfig/node10': 1.0.9
-      '@tsconfig/node12': 1.0.11
-      '@tsconfig/node14': 1.0.3
-      '@tsconfig/node16': 1.0.4
-      '@types/node': 16.11.7
-      acorn: 8.10.0
-      acorn-walk: 8.2.0
-      arg: 4.1.3
-      create-require: 1.1.1
-      diff: 4.0.2
-      make-error: 1.3.6
-      typescript: 5.1.6
-      v8-compile-cache-lib: 3.0.1
-      yn: 3.1.1
-    dev: false
-
   /ts-node/10.9.1_9f325d9611a735e169a21f2a5da33acd:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
@@ -5282,7 +5250,7 @@ packages:
     dev: false
 
   file:projects/check-review-categories.tgz:
-    resolution: {integrity: sha512-2PBMuIdNaBAK9hoChjDH+gQf7sAQEpDCNd/QoODxqmp13lebkSCZAc8FQXCnq7XR/24n3cRMRQbKve/J/y86kQ==, tarball: file:projects/check-review-categories.tgz}
+    resolution: {integrity: sha512-MsadktPIZgDiOInTK1NmLLIzrF44IphQoqTk9i7FEgSDu36BWHeHrhopp6tkr7Wo80RYrDBxtEAiBEBjNTO3IA==, tarball: file:projects/check-review-categories.tgz}
     name: '@rush-temp/check-review-categories'
     version: 0.0.0
     dependencies:
@@ -5314,7 +5282,7 @@ packages:
     dev: false
 
   file:projects/coverage-collector.tgz:
-    resolution: {integrity: sha512-qV2z8PoA26ykZdT2n/cvMpWHJYBla0K/i0jhuD+rOknCJjXgsypqc/gskftW9sDxdfeGEIoefQEteSUbP1bESg==, tarball: file:projects/coverage-collector.tgz}
+    resolution: {integrity: sha512-WiI1568q40IUBL60nMu0h6i+FZHZLuaYh0kigY9WcIjZjDx9q42fz2U091LX3CRgJnrCn6GktEqILxL1KZSKFA==, tarball: file:projects/coverage-collector.tgz}
     name: '@rush-temp/coverage-collector'
     version: 0.0.0
     dependencies:
@@ -5354,7 +5322,7 @@ packages:
     dev: false
 
   file:projects/eslint-config.tgz_typescript@5.1.6:
-    resolution: {integrity: sha512-rjApJ5BHqNV4Myb9EW1Yvw5e75SQ8+cZe09V6ANqoJ+JbuYpwciWQlC72sY4+tLuYd5pHqu8yV/stG3RKE0s2w==, tarball: file:projects/eslint-config.tgz}
+    resolution: {integrity: sha512-xXnwEyZ5ZSCM0Hpq2YfGfTM9fGkgpB/tOfwaplHVF5nTF4qRZ3Gbp6smya1x+u9w0NqV73a4XW1R/Gfw8GhbLA==, tarball: file:projects/eslint-config.tgz}
     id: file:projects/eslint-config.tgz
     name: '@rush-temp/eslint-config'
     version: 0.0.0
@@ -5370,7 +5338,7 @@ packages:
     dev: false
 
   file:projects/jest-config.tgz:
-    resolution: {integrity: sha512-+dqGUq4txRMa6eNIEtfaQz0+MtHl+/FO/1JB6vfd7bFHGRBDn68fqgIX7m1pHm/Q2CRjW0C7pGrDMvjzyktC/Q==, tarball: file:projects/jest-config.tgz}
+    resolution: {integrity: sha512-dtDtYrD87EaQqN+RWFzh5v18D0u56dc/iceEUhddbgkeMAjcwIk5Qwm8JUjovF80nOX3iF8Ouju2O0mg1b7J1A==, tarball: file:projects/jest-config.tgz}
     name: '@rush-temp/jest-config'
     version: 0.0.0
     dependencies:
@@ -5386,12 +5354,42 @@ packages:
       jest: 29.6.4_f33ea1054aca73c5b7d9f7a6bcdf9cb1
       jest-extended: 4.0.1_jest@29.6.4
       ts-jest: 29.1.1_84442e3d8a122e3a7e676bff8bedbcc4
-      ts-node: 10.9.1_30508b081cb57ee108d0bf62d6b51711
+      ts-node: 10.9.1_9f325d9611a735e169a21f2a5da33acd
       tsc-alias: 1.8.7
       typescript: 5.1.6
     transitivePeerDependencies:
       - '@babel/core'
-      - '@swc/helpers'
+      - '@swc/core'
+      - '@swc/wasm'
+      - babel-jest
+      - babel-plugin-macros
+      - esbuild
+      - node-notifier
+      - supports-color
+    dev: false
+
+  file:projects/rush-enforce-categories-plugin.tgz:
+    resolution: {integrity: sha512-ExMlriynWCuSeocpeLTxqD5yXPw21RIYPbcUnaAhT2/pjTg21NWr1ScCerMqN0LUbzKWcHSkpui5bwfbxMdfWw==, tarball: file:projects/rush-enforce-categories-plugin.tgz}
+    name: '@rush-temp/rush-enforce-categories-plugin'
+    version: 0.0.0
+    dependencies:
+      '@fluffy-spoon/substitute': 1.208.0
+      '@jest/types': 29.6.3
+      '@jobgetapp/jest-config': 1.2.0_21ce63089f85f2328a354cf050dfab51
+      '@rushstack/node-core-library': 3.44.2
+      '@rushstack/rush-sdk': 5.100.2_@types+node@16.11.7
+      '@types/jest': 29.5.4
+      '@types/node': 16.11.7
+      eslint: 8.48.0
+      jest: 29.6.4_f33ea1054aca73c5b7d9f7a6bcdf9cb1
+      jest-extended: 4.0.1_jest@29.6.4
+      ts-jest: 29.1.1_84442e3d8a122e3a7e676bff8bedbcc4
+      ts-node: 10.9.1_9f325d9611a735e169a21f2a5da33acd
+      tsc-alias: 1.8.7
+      typescript: 5.1.6
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@swc/core'
       - '@swc/wasm'
       - babel-jest
       - babel-plugin-macros
@@ -5401,7 +5399,7 @@ packages:
     dev: false
 
   file:projects/rush-normalize.tgz:
-    resolution: {integrity: sha512-5stVLvsyUjkBPgmXULg6MJnq/QED43XWP/y8bmjQchQI9NgB5RS43D5R2CY541+RhLyFASW/w9Jn3m20WLrndg==, tarball: file:projects/rush-normalize.tgz}
+    resolution: {integrity: sha512-RQj94+UjPfYEqi2RmoQ5t6Bp/0+RB7QZS22HTwDKLQqDFaxcepGKVy9HGSGvqnkB0EfWzNHb05RFbRlMzwXBxg==, tarball: file:projects/rush-normalize.tgz}
     name: '@rush-temp/rush-normalize'
     version: 0.0.0
     dependencies:
@@ -5433,7 +5431,7 @@ packages:
     dev: false
 
   file:projects/rushenv.tgz:
-    resolution: {integrity: sha512-Icodc03ox+Yz/ojkE+F5D+5alzCntYweZxQao4jqJsFrv7b2EgtWzjew4xEokxsTQtOoiB+Gpiv3rYwrbjKobw==, tarball: file:projects/rushenv.tgz}
+    resolution: {integrity: sha512-1wECE+K4QZtR79ta0ThyF6WduVStMCUtYS8C41Q/iAYB/qfHNzKXMYw0sytrCBlHFhLp2RNI5qT0sBsTqq7uKQ==, tarball: file:projects/rushenv.tgz}
     name: '@rush-temp/rushenv'
     version: 0.0.0
     dependencies:
@@ -5463,7 +5461,7 @@ packages:
     dev: false
 
   file:projects/ship-cli.tgz:
-    resolution: {integrity: sha512-2w0h2X78+cxfhU2zV3Dn0qaBGCq1sBTjrUOShl4e2y/nQCZi3BpBSuWTNvOx2ff5JmLuOGBROTqlAypt9rIbew==, tarball: file:projects/ship-cli.tgz}
+    resolution: {integrity: sha512-NC84WSkb100XAUl2sH1uP3wul2rsNuIWish6NYgo4Hhf7wEgQVxBNtxkub6iNPtVMS+4Rj5XHIOiPIUwxF5NRg==, tarball: file:projects/ship-cli.tgz}
     name: '@rush-temp/ship-cli'
     version: 0.0.0
     dependencies:
@@ -5495,7 +5493,7 @@ packages:
     dev: false
 
   file:projects/ship-core.tgz:
-    resolution: {integrity: sha512-EwrHr+oHc2UqGC76Sql2Dr6SBzCyGj9LR7kWKm7aTRXvBF7H79nSAUYsYqBWKKx4azWOdpGEIcL84dS3yMvFIA==, tarball: file:projects/ship-core.tgz}
+    resolution: {integrity: sha512-QG/XLAhgebTBR2qTgl2Dm1jF3BRpkaJGOImlWfHEW2n2mJk3ybW2P8+rT/Vv1sKMthLyrob/OAykP9pkrxguAQ==, tarball: file:projects/ship-core.tgz}
     name: '@rush-temp/ship-core'
     version: 0.0.0
     dependencies:
@@ -5525,7 +5523,7 @@ packages:
     dev: false
 
   file:projects/ship-plugin.tgz:
-    resolution: {integrity: sha512-urQ8ISscSPbTHzi11nK7AUmqgxvvHqxzQkeyjiHrTtQYd7YSFxPtBtNm7FSgXpZEpl8mdoHvXebs1rpS5HMz6A==, tarball: file:projects/ship-plugin.tgz}
+    resolution: {integrity: sha512-rHqkQ8uPpv0Rvxw37MQiEuxJ7bSkryUH101LCus4+rJvaXIM/OD7GjEGpQF5NYCTrZ2tRJl9j1x6rdAUpywOsA==, tarball: file:projects/ship-plugin.tgz}
     name: '@rush-temp/ship-plugin'
     version: 0.0.0
     dependencies:
@@ -5556,7 +5554,7 @@ packages:
     dev: false
 
   file:projects/typescript-config.tgz:
-    resolution: {integrity: sha512-PqycgHSX3POAmkGumbrRnSBCRweA5+pwOXxGZjWdQNaOILrI5s/9eZuOb7ORW5fuKkGWMQEkENkk4wS7RKnjPw==, tarball: file:projects/typescript-config.tgz}
+    resolution: {integrity: sha512-8Ywb2DdDMfo/f2sXxUiW2nylqW6BxwhhIbmqql3UJeA3Oyut5zt4DoQInHONQD863X7zYh9s3OIhFEmoQKvF4w==, tarball: file:projects/typescript-config.tgz}
     name: '@rush-temp/typescript-config'
     version: 0.0.0
     dependencies:

@@ -1,0 +1,11 @@
+{
+  "extends": "@jobgetapp/typescript-config/tsconfig.lib.test.json",
+  "compilerOptions": {
+    "rootDir": "..",
+    "baseUrl": "../" 
+  },
+  "include": [
+    "../src/**/*",
+    "../test/**/*"
+  ]
+}

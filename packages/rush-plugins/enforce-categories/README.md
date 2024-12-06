@@ -1,7 +1,4 @@
-# @jobgetapp/check-review-categories
-
-## DEPRECATED
-Use the plugin @jobgetapp/rush-enforce-categories-plugin
+# @jobgetapp/rush-enforce-categories-plugin
 
 ## Project description
 
@@ -29,18 +26,17 @@ This is a script that ensures public or externally facing projects do not leak c
 We would want to ensure that nowhere in the dependency tree of `@jobgetapp/public-site` is `@jobgetapp/secret-code`, as tree shaking may not remove code containing private intellectual property. To do this we rely on the rush approved packages system, and using the following configuration.
 
 ```
-# common/config/jobgetapp/review-category-check.json
+# common/config/rush-plugins/enforce-categories.json
 
 {
-  "$schema": "@jobgetapp/check-review-categories/schemas/review-category-check.schema.json",
-  "projects": [{
-    "projectPathPattern": "packages\/libs\/.*",
-    "reviewCategory": "public"
+  "categoryRestrictions": [{
+    "category": "private",
+    "forbiddenCategories": ["public"]
   }]
 }
 ```
 
-When the `@jobgetapp/check-review-categories` utility is ran, it will ensure that no project inside of `packages/libs` has is included in the `public` review category.
+When the `rush enforce-categories` utility is ran, it will ensure that no project with the `private` review category shows up inside `browser-approved-packages.json` with `allowedCategories` containing `public`.
 
 ## Usage
 
@@ -65,15 +61,11 @@ When the `@jobgetapp/check-review-categories` utility is ran, it will ensure tha
 ```
 
 ```
-npm @jobgetapp/check-review-categories
+rush enforce-categories
 
-Checking packages/libs/secret-code
-Checking packages/deployments/web
-Project [@jobgetapp/secret-code] is part of the restricted category [public] as matched by [packages\/libs\/.*]
+@jobgetapp/secret-code is restricted by category: public
 
-Error: Found 1 projects in restricted review categories
-
-The script failed with exit code 1
+Found 1 category errors
 ```
 
 ### Passing Example
@@ -97,8 +89,5 @@ The script failed with exit code 1
 ```
 
 ```
-npm @jobgetapp/check-review-categories
-
-Checking packages/libs/secret-code
-Checking packages/deployments/web
+rush enforce-categories
 ```

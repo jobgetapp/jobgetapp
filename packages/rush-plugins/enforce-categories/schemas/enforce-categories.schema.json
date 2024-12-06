@@ -1,0 +1,31 @@
+{
+  "$id": "enforce-categories-config",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Review category configuration",
+  "description": "For use with the review category check command line utility plugins. Defines which packages should be tested for restricted review categories.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "description": "Part of the JSON Schema standard, this optional keyword declares the URL of the schema that the file conforms to. Editors may download the schema and use it to perform syntax highlighting.",
+      "type": "string"
+    },
+    "categoryRestrictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "forbiddenCategories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
