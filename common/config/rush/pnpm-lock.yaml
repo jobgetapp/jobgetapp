@@ -11,6 +11,7 @@ specifiers:
   '@rush-temp/eslint-config': file:./projects/eslint-config.tgz
   '@rush-temp/jest-config': file:./projects/jest-config.tgz
   '@rush-temp/rush-enforce-categories-plugin': file:./projects/rush-enforce-categories-plugin.tgz
+  '@rush-temp/rush-needs-deploy-plugin': file:./projects/rush-needs-deploy-plugin.tgz
   '@rush-temp/rush-normalize': file:./projects/rush-normalize.tgz
   '@rush-temp/rushenv': file:./projects/rushenv.tgz
   '@rush-temp/ship-cli': file:./projects/ship-cli.tgz
@@ -57,6 +58,7 @@ dependencies:
   '@rush-temp/eslint-config': file:projects/eslint-config.tgz_typescript@5.1.6
   '@rush-temp/jest-config': file:projects/jest-config.tgz
   '@rush-temp/rush-enforce-categories-plugin': file:projects/rush-enforce-categories-plugin.tgz
+  '@rush-temp/rush-needs-deploy-plugin': file:projects/rush-needs-deploy-plugin.tgz
   '@rush-temp/rush-normalize': file:projects/rush-normalize.tgz
   '@rush-temp/rushenv': file:projects/rushenv.tgz
   '@rush-temp/ship-cli': file:projects/ship-cli.tgz
@@ -5371,6 +5373,36 @@ packages:
   file:projects/rush-enforce-categories-plugin.tgz:
     resolution: {integrity: sha512-ExMlriynWCuSeocpeLTxqD5yXPw21RIYPbcUnaAhT2/pjTg21NWr1ScCerMqN0LUbzKWcHSkpui5bwfbxMdfWw==, tarball: file:projects/rush-enforce-categories-plugin.tgz}
     name: '@rush-temp/rush-enforce-categories-plugin'
+    version: 0.0.0
+    dependencies:
+      '@fluffy-spoon/substitute': 1.208.0
+      '@jest/types': 29.6.3
+      '@jobgetapp/jest-config': 1.2.0_21ce63089f85f2328a354cf050dfab51
+      '@rushstack/node-core-library': 3.44.2
+      '@rushstack/rush-sdk': 5.100.2_@types+node@16.11.7
+      '@types/jest': 29.5.4
+      '@types/node': 16.11.7
+      eslint: 8.48.0
+      jest: 29.6.4_f33ea1054aca73c5b7d9f7a6bcdf9cb1
+      jest-extended: 4.0.1_jest@29.6.4
+      ts-jest: 29.1.1_84442e3d8a122e3a7e676bff8bedbcc4
+      ts-node: 10.9.1_9f325d9611a735e169a21f2a5da33acd
+      tsc-alias: 1.8.7
+      typescript: 5.1.6
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@swc/core'
+      - '@swc/wasm'
+      - babel-jest
+      - babel-plugin-macros
+      - esbuild
+      - node-notifier
+      - supports-color
+    dev: false
+
+  file:projects/rush-needs-deploy-plugin.tgz:
+    resolution: {integrity: sha512-9oTiEnWTyZD12KXsR2Bp/ZXFTg82SqSx94Pv9xnzzils1fjegKvP8CUrPYYJ7Ewp0hAPQg3CUA8CBR5qfPXPhw==, tarball: file:projects/rush-needs-deploy-plugin.tgz}
+    name: '@rush-temp/rush-needs-deploy-plugin'
     version: 0.0.0
     dependencies:
       '@fluffy-spoon/substitute': 1.208.0

@@ -1,0 +1,9 @@
+{
+  "extends": "@jobgetapp/typescript-config/tsconfig.lib.src.json",
+  "compilerOptions": {
+    "outDir": "../dist",
+    "rootDir": ".",
+    "baseUrl": "./" ,
+    "resolveJsonModule": true
+  }
+}
