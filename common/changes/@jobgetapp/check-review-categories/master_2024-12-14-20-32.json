@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@jobgetapp/check-review-categories",
+      "comment": "allow category relation restrictions",
+      "type": "minor"
+    }
+  ],
+  "packageName": "@jobgetapp/check-review-categories"
+}

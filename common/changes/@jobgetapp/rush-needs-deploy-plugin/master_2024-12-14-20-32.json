@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@jobgetapp/rush-needs-deploy-plugin",
+      "comment": "add plugin to list all projects with changes based on filters",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@jobgetapp/rush-needs-deploy-plugin"
+}
