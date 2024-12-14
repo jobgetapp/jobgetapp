@@ -69,4 +69,4 @@ jobs:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         run: |
           set -e
-          rush publish --apply --publish --target-branch master
+          rush publish --apply --publish --set-access-level public --target-branch master
