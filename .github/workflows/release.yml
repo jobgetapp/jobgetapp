@@ -18,6 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/jobgetapp/ship:latest
+    permissions: write-all
     steps:
       # Checkout the latest changes for the branch
       - name: Checkout
