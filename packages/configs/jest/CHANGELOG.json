@@ -2,6 +2,18 @@
   "name": "@jobgetapp/jest-config",
   "entries": [
     {
+      "version": "3.0.1",
+      "tag": "@jobgetapp/jest-config_v3.0.1",
+      "date": "Mon, 10 Jun 2024 22:05:24 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "remove swc deps"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.0.0",
       "tag": "@jobgetapp/jest-config_v3.0.0",
       "date": "Mon, 10 Jun 2024 21:29:03 GMT",
