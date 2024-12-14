@@ -18,7 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/jobgetapp/ship:latest
-    permissions: write-all
     steps:
       # Checkout the latest changes for the branch
       - name: Checkout
@@ -62,17 +61,6 @@ jobs:
           set -e
           RUSH_TEST_ARGS=$(ship list -i | sed -n '/^\[/,$p' | jq -r '[.[] | .name = "--only \(.name)" | .name] | join(" ")')
           rush test ${RUSH_TEST_ARGS}
-
-      # Publish to GPR
-      - name: GPR Publish
-        env:
-          JOBGETAPP_REGISTRY: npm.pkg.github.com
-          GPR_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          set -e
-          rush publish --apply --publish
-          git clean -f
-          git reset --hard HEAD
 
       # Publish to NPM
       - name: NPM Publish
