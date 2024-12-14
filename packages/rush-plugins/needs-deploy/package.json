@@ -1,6 +1,6 @@
 {
     "name": "@jobgetapp/rush-needs-deploy-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Utility to list all deployable projects with changes.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",

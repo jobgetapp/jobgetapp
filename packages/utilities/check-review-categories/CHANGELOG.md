@@ -1,6 +1,13 @@
 # Change Log - @jobgetapp/check-review-categories
 
-This log was last generated on Wed, 06 Sep 2023 21:15:37 GMT and should not be manually modified.
+This log was last generated on Sat, 14 Dec 2024 21:23:36 GMT and should not be manually modified.
+
+## 1.5.0
+Sat, 14 Dec 2024 21:23:36 GMT
+
+### Minor changes
+
+- allow category relation restrictions
 
 ## 1.4.0
 Wed, 06 Sep 2023 21:15:37 GMT

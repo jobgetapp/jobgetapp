@@ -1,0 +1,17 @@
+{
+  "name": "@jobgetapp/rush-enforce-categories-plugin",
+  "entries": [
+    {
+      "version": "1.0.1",
+      "tag": "@jobgetapp/rush-enforce-categories-plugin_v1.0.1",
+      "date": "Sat, 14 Dec 2024 21:23:36 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "add plugin to replace check-review-categories"
+          }
+        ]
+      }
+    }
+  ]
+}

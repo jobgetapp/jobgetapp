@@ -2,6 +2,18 @@
   "name": "@jobgetapp/check-review-categories",
   "entries": [
     {
+      "version": "1.5.0",
+      "tag": "@jobgetapp/check-review-categories_v1.5.0",
+      "date": "Sat, 14 Dec 2024 21:23:36 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "allow category relation restrictions"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.4.0",
       "tag": "@jobgetapp/check-review-categories_v1.4.0",
       "date": "Wed, 06 Sep 2023 21:15:37 GMT",
