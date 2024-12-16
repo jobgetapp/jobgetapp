@@ -2,6 +2,18 @@
   "name": "@jobgetapp/rush-enforce-categories-plugin",
   "entries": [
     {
+      "version": "1.1.0",
+      "tag": "@jobgetapp/rush-enforce-categories-plugin_v1.1.0",
+      "date": "Mon, 16 Dec 2024 18:41:15 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "use rush actions to execute task"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.1",
       "tag": "@jobgetapp/rush-enforce-categories-plugin_v1.0.1",
       "date": "Sat, 14 Dec 2024 21:23:36 GMT",

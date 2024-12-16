@@ -1,6 +1,13 @@
 # Change Log - @jobgetapp/ship-plugin
 
-This log was last generated on Wed, 06 Sep 2023 21:15:37 GMT and should not be manually modified.
+This log was last generated on Mon, 16 Dec 2024 18:41:15 GMT and should not be manually modified.
+
+## 1.3.1
+Mon, 16 Dec 2024 18:41:15 GMT
+
+### Patches
+
+- update ship config path to rush-plugins
 
 ## 1.3.0
 Wed, 06 Sep 2023 21:15:37 GMT
