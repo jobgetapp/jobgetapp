@@ -1,6 +1,6 @@
 {
     "name": "@jobgetapp/rush-enforce-categories-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Utility to ensure rush projects to not leak internal code.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
