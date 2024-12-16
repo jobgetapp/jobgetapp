@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@jobgetapp/ship-plugin",
+      "comment": "update ship config path to rush-plugins",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@jobgetapp/ship-plugin"
+}
