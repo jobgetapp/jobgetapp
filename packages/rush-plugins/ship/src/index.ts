@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import * as fs from 'fs'
 import * as path from 'path'
 
@@ -25,9 +27,12 @@ import {
   ConsoleTerminalProvider
 } from '@rushstack/node-core-library'
 
-import { ShipCLI } from '~/cli'
+import { ShipCLI } from '~/services'
 
-const run = async (): Promise<void> => {
+const terminal: Terminal = new Terminal(new ConsoleTerminalProvider())
+process.exitCode = 1
+
+const main = async (): Promise<void> => {
   const rushConfiguration = PluginContracts.RushConfiguration.loadFromDefaultLocation({
     startingFolder: process.cwd()
   })
@@ -38,7 +43,6 @@ const run = async (): Promise<void> => {
   const config: PluginContracts.ShipGlobalConfig = await configService.getGlobalConfig()
   const changeManager = new PluginContracts.ChangeManager(rushConfiguration, new Set())
   const changeService = new ChangeService(rushConfiguration, changeManager, configService, config)
-  const terminal = new Terminal(new ConsoleTerminalProvider())
   const executionService = new ExecutionService(Executable, terminal)
   const dockerService = new DockerService(config, executionService, terminal)
   const projectTagService = new ProjectTagService(changeService, config)
@@ -77,6 +81,8 @@ const run = async (): Promise<void> => {
   await shipCLI.execute()
 }
 
-void (async (): Promise<void> => {
-  await run()
-})()
+main()
+  .then(() => {
+    process.exitCode = 0
+  })
+  .catch(terminal.writeErrorLine)

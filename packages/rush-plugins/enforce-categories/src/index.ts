@@ -4,9 +4,9 @@ import { Terminal, ConsoleTerminalProvider } from '@rushstack/node-core-library'
 import { RushConfiguration } from '@rushstack/rush-sdk'
 
 import { CategoryEnforcerService, ConfigService } from './services'
+import { EnforceCategoriesCLI } from './services/cli'
 
-export const terminal: Terminal = new Terminal(new ConsoleTerminalProvider())
-
+const terminal: Terminal = new Terminal(new ConsoleTerminalProvider())
 process.exitCode = 1
 
 async function main (): Promise<void> {
@@ -16,8 +16,10 @@ async function main (): Promise<void> {
     })
     const configService = new ConfigService(rushConfiguration)
     const config = await configService.load()
-    const categoryEnforcerService = new CategoryEnforcerService(terminal, config)
-    categoryEnforcerService.run(rushConfiguration)
+    const categoryEnforcerService = new CategoryEnforcerService(terminal, rushConfiguration, config)
+
+    const enforceCategoriesCli = new EnforceCategoriesCLI(terminal, categoryEnforcerService)
+    await enforceCategoriesCli.execute()
   } catch (error: any) {
     if (error.message) {
       terminal.writeErrorLine(error.message)
@@ -31,4 +33,4 @@ main()
   .then(() => {
     process.exitCode = 0
   })
-  .catch(console.error)
+  .catch(terminal.writeErrorLine)

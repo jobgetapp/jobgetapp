@@ -6,3 +6,7 @@ export interface CategoryRestrictionContract {
 export interface CategoryEnforcerConfigContract {
   readonly categoryRestrictions: CategoryRestrictionContract[]
 }
+
+export interface CategoryEnforcerServiceContract {
+  run (): void
+}

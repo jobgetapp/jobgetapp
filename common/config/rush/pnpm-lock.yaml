@@ -6,15 +6,13 @@ specifiers:
   '@jest/types': 29.6.3
   '@jobgetapp/jest-config': 1.2.0
   '@nuxtjs/eslint-config-typescript': 12.0.0
-  '@rush-temp/check-review-categories': file:./projects/check-review-categories.tgz
   '@rush-temp/coverage-collector': file:./projects/coverage-collector.tgz
   '@rush-temp/eslint-config': file:./projects/eslint-config.tgz
   '@rush-temp/jest-config': file:./projects/jest-config.tgz
   '@rush-temp/rush-enforce-categories-plugin': file:./projects/rush-enforce-categories-plugin.tgz
-  '@rush-temp/rush-needs-deploy-plugin': file:./projects/rush-needs-deploy-plugin.tgz
   '@rush-temp/rush-normalize': file:./projects/rush-normalize.tgz
+  '@rush-temp/rush-ship-plugin': file:./projects/rush-ship-plugin.tgz
   '@rush-temp/rushenv': file:./projects/rushenv.tgz
-  '@rush-temp/ship-cli': file:./projects/ship-cli.tgz
   '@rush-temp/ship-core': file:./projects/ship-core.tgz
   '@rush-temp/ship-plugin': file:./projects/ship-plugin.tgz
   '@rush-temp/typescript-config': file:./projects/typescript-config.tgz
@@ -33,7 +31,6 @@ specifiers:
   eslint: 8.48.0
   eslint-plugin-import: 2.28.1
   eslint-plugin-tsdoc: 0.2.17
-  git-repo-info: 2.1.1
   glob: 7.2.0
   istanbul-lib-coverage: 3.2.0
   istanbul-lib-report: 3.0.0
@@ -53,15 +50,13 @@ dependencies:
   '@jest/types': 29.6.3
   '@jobgetapp/jest-config': 1.2.0_21ce63089f85f2328a354cf050dfab51
   '@nuxtjs/eslint-config-typescript': 12.0.0_eslint@8.48.0+typescript@5.1.6
-  '@rush-temp/check-review-categories': file:projects/check-review-categories.tgz
   '@rush-temp/coverage-collector': file:projects/coverage-collector.tgz
   '@rush-temp/eslint-config': file:projects/eslint-config.tgz_typescript@5.1.6
   '@rush-temp/jest-config': file:projects/jest-config.tgz
   '@rush-temp/rush-enforce-categories-plugin': file:projects/rush-enforce-categories-plugin.tgz
-  '@rush-temp/rush-needs-deploy-plugin': file:projects/rush-needs-deploy-plugin.tgz
   '@rush-temp/rush-normalize': file:projects/rush-normalize.tgz
+  '@rush-temp/rush-ship-plugin': file:projects/rush-ship-plugin.tgz
   '@rush-temp/rushenv': file:projects/rushenv.tgz
-  '@rush-temp/ship-cli': file:projects/ship-cli.tgz
   '@rush-temp/ship-core': file:projects/ship-core.tgz
   '@rush-temp/ship-plugin': file:projects/ship-plugin.tgz
   '@rush-temp/typescript-config': file:projects/typescript-config.tgz
@@ -80,7 +75,6 @@ dependencies:
   eslint: 8.48.0
   eslint-plugin-import: 2.28.1_eslint@8.48.0
   eslint-plugin-tsdoc: 0.2.17
-  git-repo-info: 2.1.1
   glob: 7.2.0
   istanbul-lib-coverage: 3.2.0
   istanbul-lib-report: 3.0.0
@@ -2889,11 +2883,6 @@ packages:
       resolve-pkg-maps: 1.0.0
     dev: false
 
-  /git-repo-info/2.1.1:
-    resolution: {integrity: sha512-8aCohiDo4jwjOwma4FmYFd3i97urZulL8XL24nIPxuE+GZnfsAyy/g2Shqx6OjUiFKUXZM+Yy+KHnOmmA3FVcg==}
-    engines: {node: '>= 4.0'}
-    dev: false
-
   /glob-parent/5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
@@ -5251,38 +5240,6 @@ packages:
       commander: 9.5.0
     dev: false
 
-  file:projects/check-review-categories.tgz:
-    resolution: {integrity: sha512-MsadktPIZgDiOInTK1NmLLIzrF44IphQoqTk9i7FEgSDu36BWHeHrhopp6tkr7Wo80RYrDBxtEAiBEBjNTO3IA==, tarball: file:projects/check-review-categories.tgz}
-    name: '@rush-temp/check-review-categories'
-    version: 0.0.0
-    dependencies:
-      '@fluffy-spoon/substitute': 1.208.0
-      '@jest/types': 29.6.3
-      '@jobgetapp/eslint-config': 1.1.0_eslint@8.48.0+typescript@5.1.6
-      '@jobgetapp/jest-config': 1.2.0_21ce63089f85f2328a354cf050dfab51
-      '@rushstack/node-core-library': 3.44.2
-      '@rushstack/rush-sdk': 5.100.2_@types+node@16.11.7
-      '@rushstack/ts-command-line': 4.10.5
-      '@types/jest': 29.5.4
-      '@types/node': 16.11.7
-      eslint: 8.48.0
-      jest: 29.6.4_f33ea1054aca73c5b7d9f7a6bcdf9cb1
-      jest-extended: 4.0.1_jest@29.6.4
-      ts-jest: 29.1.1_84442e3d8a122e3a7e676bff8bedbcc4
-      ts-node: 10.9.1_9f325d9611a735e169a21f2a5da33acd
-      tsc-alias: 1.8.7
-      typescript: 5.1.6
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@swc/core'
-      - '@swc/wasm'
-      - babel-jest
-      - babel-plugin-macros
-      - esbuild
-      - node-notifier
-      - supports-color
-    dev: false
-
   file:projects/coverage-collector.tgz:
     resolution: {integrity: sha512-WiI1568q40IUBL60nMu0h6i+FZHZLuaYh0kigY9WcIjZjDx9q42fz2U091LX3CRgJnrCn6GktEqILxL1KZSKFA==, tarball: file:projects/coverage-collector.tgz}
     name: '@rush-temp/coverage-collector'
@@ -5371,7 +5328,7 @@ packages:
     dev: false
 
   file:projects/rush-enforce-categories-plugin.tgz:
-    resolution: {integrity: sha512-ExMlriynWCuSeocpeLTxqD5yXPw21RIYPbcUnaAhT2/pjTg21NWr1ScCerMqN0LUbzKWcHSkpui5bwfbxMdfWw==, tarball: file:projects/rush-enforce-categories-plugin.tgz}
+    resolution: {integrity: sha512-L4Rpol/VMOUVlPpek86U/M1TFLs/8tiVZMFZaBVrvt+88tuMax84KYykHH8w3TItYTGWULBXqwKEgS1cojKMgQ==, tarball: file:projects/rush-enforce-categories-plugin.tgz}
     name: '@rush-temp/rush-enforce-categories-plugin'
     version: 0.0.0
     dependencies:
@@ -5380,36 +5337,7 @@ packages:
       '@jobgetapp/jest-config': 1.2.0_21ce63089f85f2328a354cf050dfab51
       '@rushstack/node-core-library': 3.44.2
       '@rushstack/rush-sdk': 5.100.2_@types+node@16.11.7
-      '@types/jest': 29.5.4
-      '@types/node': 16.11.7
-      eslint: 8.48.0
-      jest: 29.6.4_f33ea1054aca73c5b7d9f7a6bcdf9cb1
-      jest-extended: 4.0.1_jest@29.6.4
-      ts-jest: 29.1.1_84442e3d8a122e3a7e676bff8bedbcc4
-      ts-node: 10.9.1_9f325d9611a735e169a21f2a5da33acd
-      tsc-alias: 1.8.7
-      typescript: 5.1.6
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@swc/core'
-      - '@swc/wasm'
-      - babel-jest
-      - babel-plugin-macros
-      - esbuild
-      - node-notifier
-      - supports-color
-    dev: false
-
-  file:projects/rush-needs-deploy-plugin.tgz:
-    resolution: {integrity: sha512-9oTiEnWTyZD12KXsR2Bp/ZXFTg82SqSx94Pv9xnzzils1fjegKvP8CUrPYYJ7Ewp0hAPQg3CUA8CBR5qfPXPhw==, tarball: file:projects/rush-needs-deploy-plugin.tgz}
-    name: '@rush-temp/rush-needs-deploy-plugin'
-    version: 0.0.0
-    dependencies:
-      '@fluffy-spoon/substitute': 1.208.0
-      '@jest/types': 29.6.3
-      '@jobgetapp/jest-config': 1.2.0_21ce63089f85f2328a354cf050dfab51
-      '@rushstack/node-core-library': 3.44.2
-      '@rushstack/rush-sdk': 5.100.2_@types+node@16.11.7
+      '@rushstack/ts-command-line': 4.10.5
       '@types/jest': 29.5.4
       '@types/node': 16.11.7
       eslint: 8.48.0
@@ -5462,18 +5390,19 @@ packages:
       - supports-color
     dev: false
 
-  file:projects/rushenv.tgz:
-    resolution: {integrity: sha512-1wECE+K4QZtR79ta0ThyF6WduVStMCUtYS8C41Q/iAYB/qfHNzKXMYw0sytrCBlHFhLp2RNI5qT0sBsTqq7uKQ==, tarball: file:projects/rushenv.tgz}
-    name: '@rush-temp/rushenv'
+  file:projects/rush-ship-plugin.tgz:
+    resolution: {integrity: sha512-yf23YtcZYKlquStR4qo3ccsJVKpNd1uOrQLZd7+ovFCUwb9cojr4g/op2c8kycmo94+t+OLVdwvGXevFkA7hQw==, tarball: file:projects/rush-ship-plugin.tgz}
+    name: '@rush-temp/rush-ship-plugin'
     version: 0.0.0
     dependencies:
       '@fluffy-spoon/substitute': 1.208.0
       '@jest/types': 29.6.3
-      '@jobgetapp/eslint-config': 1.1.0_eslint@8.48.0+typescript@5.1.6
       '@jobgetapp/jest-config': 1.2.0_21ce63089f85f2328a354cf050dfab51
+      '@rushstack/node-core-library': 3.44.2
+      '@rushstack/rush-sdk': 5.100.2_@types+node@16.11.7
+      '@rushstack/ts-command-line': 4.10.5
       '@types/jest': 29.5.4
       '@types/node': 16.11.7
-      dotenv: 8.2.0
       eslint: 8.48.0
       jest: 29.6.4_f33ea1054aca73c5b7d9f7a6bcdf9cb1
       jest-extended: 4.0.1_jest@29.6.4
@@ -5492,21 +5421,19 @@ packages:
       - supports-color
     dev: false
 
-  file:projects/ship-cli.tgz:
-    resolution: {integrity: sha512-NC84WSkb100XAUl2sH1uP3wul2rsNuIWish6NYgo4Hhf7wEgQVxBNtxkub6iNPtVMS+4Rj5XHIOiPIUwxF5NRg==, tarball: file:projects/ship-cli.tgz}
-    name: '@rush-temp/ship-cli'
+  file:projects/rushenv.tgz:
+    resolution: {integrity: sha512-1wECE+K4QZtR79ta0ThyF6WduVStMCUtYS8C41Q/iAYB/qfHNzKXMYw0sytrCBlHFhLp2RNI5qT0sBsTqq7uKQ==, tarball: file:projects/rushenv.tgz}
+    name: '@rush-temp/rushenv'
     version: 0.0.0
     dependencies:
       '@fluffy-spoon/substitute': 1.208.0
       '@jest/types': 29.6.3
       '@jobgetapp/eslint-config': 1.1.0_eslint@8.48.0+typescript@5.1.6
       '@jobgetapp/jest-config': 1.2.0_21ce63089f85f2328a354cf050dfab51
-      '@rushstack/node-core-library': 3.44.2
-      '@rushstack/ts-command-line': 4.10.5
       '@types/jest': 29.5.4
       '@types/node': 16.11.7
+      dotenv: 8.2.0
       eslint: 8.48.0
-      git-repo-info: 2.1.1
       jest: 29.6.4_f33ea1054aca73c5b7d9f7a6bcdf9cb1
       jest-extended: 4.0.1_jest@29.6.4
       ts-jest: 29.1.1_84442e3d8a122e3a7e676bff8bedbcc4

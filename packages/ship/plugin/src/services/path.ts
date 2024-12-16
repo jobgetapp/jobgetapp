@@ -20,7 +20,7 @@ export class ShipPathService implements ShipPathServiceContract {
    * Path to ship root folder (common/config/ship)
    */
   public get rootFolder (): string {
-    return `${this.rushConfiguration.commonFolder}/config/ship`
+    return `${this.rushConfiguration.commonFolder}/config/rush-plugins/ship`
   }
 
   /**

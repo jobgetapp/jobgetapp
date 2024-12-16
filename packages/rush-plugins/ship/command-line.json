@@ -1,0 +1,88 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/command-line.schema.json",
+  "commands": [
+    {
+      "name": "ship:init",
+      "commandKind": "global",
+      "summary": "Create base repo image.",
+      "description": "Create image after building and testing changes.",
+      "shellCommand": "node <packageFolder>/dist/index.js init"
+    },
+    {
+      "name": "ship:list",
+      "commandKind": "global",
+      "summary": "List deployable changes.",
+      "description": "List names of deployable projects with active changes.",
+      "shellCommand": "node <packageFolder>/dist/index.js list",
+      "safeForSimultaneousRushProcesses": true
+    },
+    {
+      "name": "ship:build",
+      "commandKind": "global",
+      "summary": "Create docker container for project.",
+      "description": "Create docker container for project.",
+      "shellCommand": "node <packageFolder>/dist/index.js build",
+      "safeForSimultaneousRushProcesses": true
+    },
+    {
+      "name": "ship:ship",
+      "commandKind": "global",
+      "summary": "Performs an update of cloud resources for a project.",
+      "description": "Update cloud resources to reflect changes in docker registry.",
+      "shellCommand": "node <packageFolder>/dist/index.js project",
+      "safeForSimultaneousRushProcesses": true
+    }
+  ],
+  "parameters": [
+    {
+      "parameterKind": "string",
+      "longName": "--project",
+      "shortName": "-p",
+      "description": "Name of project",
+      "associatedCommands": ["ship:build", "ship:ship"],
+      "argumentName": "PROJECT_NAME",
+      "required": true
+    },
+    {
+      "parameterKind": "string",
+      "longName": "--tag",
+      "shortName": "-t",
+      "description": "Optional custom tag to apply to build.",
+      "associatedCommands": ["ship:init", "ship:build", "ship:ship"],
+      "argumentName": "TAG_NAME",
+      "required": false
+    },
+    {
+      "parameterKind": "string",
+      "longName": "--repo-tag",
+      "shortName": "-r",
+      "description": "Tag of base repo image to build from.",
+      "associatedCommands": ["ship:build"],
+      "argumentName": "TAG_NAME",
+      "required": false
+    },
+    {
+      "parameterKind": "flag",
+      "longName": "--include-unconfigured",
+      "shortName": "-i",
+      "description": "Include projects not have ship.json file.",
+      "associatedCommands": ["ship:list"]
+    },
+    {
+      "parameterKind": "string",
+      "longName": "--version-policy",
+      "shortName": "-p",
+      "description": "Change the version used to gather deployable projects.",
+      "associatedCommands": ["ship:list"],
+      "argumentName": "VERSION_POLICY_NAME"
+    },
+    {
+      "parameterKind": "string",
+      "longName": "--path-pattern",
+      "shortName": "-m",
+      "description": "Refines results to projects to those with a path matching the provided pattern.",
+      "associatedCommands": ["ship:list"],
+      "argumentName": "PATH_PATTERN"
+    }
+  ]
+}

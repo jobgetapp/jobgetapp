@@ -8,7 +8,7 @@ import {
   ListAction,
   BuildAction,
   ProjectPluginAction
-} from '~/actions'
+} from './actions'
 
 /**
  * Ship command line utility.

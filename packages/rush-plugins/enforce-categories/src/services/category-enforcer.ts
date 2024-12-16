@@ -6,6 +6,7 @@ import { CategoryEnforcerConfigContract } from '~/contracts'
 export class CategoryEnforcerService {
   public constructor (
     protected readonly terminal: ITerminal,
+    protected readonly rushConfig: RushConfiguration,
     protected readonly config: CategoryEnforcerConfigContract
   ) {}
 
@@ -36,10 +37,9 @@ export class CategoryEnforcerService {
   }
 
   protected getProjectRestrictedCategoryOverlap (
-    rushConfig: RushConfiguration,
     project: RushConfigurationProject
   ): string[] {
-    const categories = this.getProjectCategories(rushConfig.approvedPackagesPolicy, project)
+    const categories = this.getProjectCategories(this.rushConfig.approvedPackagesPolicy, project)
     for (const categoryRestriction of this.config.categoryRestrictions) {
       if (project.reviewCategory === categoryRestriction.category) {
         return this.getCategoryOverlap(categories, categoryRestriction.forbiddenCategories)
@@ -49,12 +49,10 @@ export class CategoryEnforcerService {
     return []
   }
 
-  public run (
-    rushConfig: RushConfiguration
-  ): any {
+  public run (): void {
     const errors: string[] = []
-    for (const project of rushConfig.projects) {
-      const result = this.getProjectRestrictedCategoryOverlap(rushConfig, project)
+    for (const project of this.rushConfig.projects) {
+      const result = this.getProjectRestrictedCategoryOverlap(project)
       errors.push(...result.map(category => {
         return `${project.packageName} is restricted by category: ${category}`
       }))

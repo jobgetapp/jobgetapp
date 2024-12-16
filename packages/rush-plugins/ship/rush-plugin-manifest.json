@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush-plugin-manifest.schema.json",
   "plugins": [
     {
-      "pluginName": "rush-needs-deploy-plugin",
-      "description": "Utility to list all deployable projects with changes.",
+      "pluginName": "rush-ship-plugin",
+      "description": "Utility for deploying projects within a rush repo.",
       "commandLineJsonFilePath": "./command-line.json"
     }
   ]

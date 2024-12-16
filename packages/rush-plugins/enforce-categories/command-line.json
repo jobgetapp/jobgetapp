@@ -5,7 +5,7 @@
       "name": "enforce-categories",
       "commandKind": "global",
       "summary": "Utility to ensure rush projects to not leak internal code.",
-      "shellCommand": "node <packageFolder>/dist/index.js",
+      "shellCommand": "node <packageFolder>/dist/index.js enforce",
       "safeForSimultaneousRushProcesses": false
     }
   ]

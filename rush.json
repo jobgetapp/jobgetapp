@@ -381,11 +381,6 @@
     "reviewCategory": "public",
     "versionPolicyName": "packable"
   }, {
-    "packageName": "@jobgetapp/ship-cli",
-    "projectFolder": "packages/ship/cli",
-    "reviewCategory": "public",
-    "versionPolicyName": "packable"
-  }, {
     "packageName": "@jobgetapp/ship-core",
     "projectFolder": "packages/ship/core",
     "reviewCategory": "public",
@@ -393,11 +388,6 @@
   }, {
     "packageName": "@jobgetapp/ship-plugin",
     "projectFolder": "packages/ship/plugin",
-    "reviewCategory": "public",
-    "versionPolicyName": "packable"
-  }, {
-    "packageName": "@jobgetapp/check-review-categories",
-    "projectFolder": "packages/utilities/check-review-categories",
     "reviewCategory": "public",
     "versionPolicyName": "packable"
   }, {
@@ -416,8 +406,8 @@
     "reviewCategory": "public",
     "versionPolicyName": "packable"
   }, {
-    "packageName": "@jobgetapp/rush-needs-deploy-plugin",
-    "projectFolder": "packages/rush-plugins/needs-deploy",
+    "packageName": "@jobgetapp/rush-ship-plugin",
+    "projectFolder": "packages/rush-plugins/ship",
     "reviewCategory": "public",
     "versionPolicyName": "packable"
   }]
