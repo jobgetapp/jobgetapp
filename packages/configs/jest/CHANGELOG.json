@@ -2,6 +2,18 @@
   "name": "@jobgetapp/jest-config",
   "entries": [
     {
+      "version": "3.1.0",
+      "tag": "@jobgetapp/jest-config_v3.1.0",
+      "date": "Wed, 07 May 2025 14:31:20 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "make test type checking mandatory by default"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.0.1",
       "tag": "@jobgetapp/jest-config_v3.0.1",
       "date": "Mon, 10 Jun 2024 22:05:24 GMT",

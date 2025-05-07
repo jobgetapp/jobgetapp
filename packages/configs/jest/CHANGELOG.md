@@ -1,6 +1,13 @@
 # Change Log - @jobgetapp/jest-config
 
-This log was last generated on Mon, 10 Jun 2024 22:05:24 GMT and should not be manually modified.
+This log was last generated on Wed, 07 May 2025 14:31:20 GMT and should not be manually modified.
+
+## 3.1.0
+Wed, 07 May 2025 14:31:20 GMT
+
+### Minor changes
+
+- make test type checking mandatory by default
 
 ## 3.0.1
 Mon, 10 Jun 2024 22:05:24 GMT
