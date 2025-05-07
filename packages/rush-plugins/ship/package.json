@@ -1,6 +1,6 @@
 {
     "name": "@jobgetapp/rush-ship-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Utility for deploying projects within a rush repo.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -38,8 +38,8 @@
     "dependencies": {
       "@rushstack/node-core-library": "3.44.2",
       "@rushstack/rush-sdk": "5.100.2",
-      "@jobgetapp/ship-core": "1.2.0",
-      "@jobgetapp/ship-plugin": "1.3.0",
+      "@jobgetapp/ship-core": "1.2.1",
+      "@jobgetapp/ship-plugin": "1.3.1",
       "@rushstack/ts-command-line": "4.10.5"
     },
     "devDependencies": {
