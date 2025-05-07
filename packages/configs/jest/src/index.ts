@@ -6,6 +6,7 @@ export const JestConfig = (options: {
   forBrowser?: boolean
   tsconfigPath?: string
   setupFilesAfterEnv?: string[]
+  disableTypechecking?: boolean
 } = {}): Promise<Config.InitialOptions> => Promise.resolve({
   verbose: true,
   collectCoverage: false,
@@ -33,7 +34,7 @@ export const JestConfig = (options: {
   transform: {
     '^.+\\.tsx?$': ['ts-jest', {
       tsconfig: options.tsconfigPath || '<rootDir>/test/tsconfig.json',
-      isolatedModules: true
+      isolatedModules: options.disableTypechecking || false
     }]
   },
   moduleNameMapper: {
