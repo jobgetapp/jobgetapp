@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@jobgetapp/jest-config",
+      "comment": "make test type checking mandatory by default",
+      "type": "minor"
+    }
+  ],
+  "packageName": "@jobgetapp/jest-config"
+}
